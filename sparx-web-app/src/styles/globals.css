@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap'); */
+html{
+  scroll-behavior: smooth;
+  font-family: 'Russo One', sans-serif ;
+}
+
+@layer base {
+  body {
+    @apply bg-[#030303] text-[#f8f8f8] tracking-wide
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl 
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+  
+  li {
+    @apply cursor-pointer
+  }
+
+  
+  /* #d8b3b7
+  #989999 */
+  
+  button {
+    @apply px-4 py-2 rounded-md uppercase font-semibold tracking-wider bg-gradient-to-r from-[#fe0810] to-[#fe0810] text-white
+  }
+}
