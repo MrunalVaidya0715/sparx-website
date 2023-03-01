@@ -1,3 +1,4 @@
+import Slider from "components/Slider";
 
 
 
@@ -9,6 +10,7 @@ export default function Home() {
         <p>Hello</p>
         <button>Hello</button>
       </div> */}
+      
       
     </>
   )

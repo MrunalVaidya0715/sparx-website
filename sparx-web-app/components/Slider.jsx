@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 
@@ -23,6 +23,17 @@ const Slider = () => {
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    const autoc = () =>{
+            nextSlide()
+
+    
+    }
+    useEffect(()=>{
+        const intervalId = setTimeout(autoc,3000)
+        return ()=> clearTimeout(intervalId)
+
+    },[currentIndex])
+
     const prevSlide = () => {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -40,7 +51,7 @@ const Slider = () => {
     };
 
     return (
-        <div className='max-w-[1240px] h-[38rem] w-full m-auto relative group'>
+        <div className='   max-w-[1240px] h-[38rem] w-full relative group'>
             <div
                 style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
                 className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
