@@ -74,7 +74,7 @@ function Navbar() {
         <Image src={Logo} alt="/" width='75' height='50' />
         <div>
           <ul className='hidden md:flex  text-[#9D9D9E]'>
-            <Link href="/#home">
+            <Link href="/home">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Home</li>
             </Link>
 
@@ -126,7 +126,7 @@ function Navbar() {
             </div>
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-9' >
-                <Link href='/#home'>
+                <Link href='/home'>
                   <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Home</li>
                 </Link>
                 <Link href='/#schedule'>
