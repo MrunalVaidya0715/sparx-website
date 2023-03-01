@@ -1,5 +1,5 @@
-import Navbar from "components/Navbar"
-import Head from "next/head"
+
+
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <p>Hello</p>
         <button>Hello</button>
       </div> */}
-      <Navbar/>
+      
     </>
   )
 }

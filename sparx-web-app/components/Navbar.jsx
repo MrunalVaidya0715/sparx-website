@@ -15,6 +15,16 @@ function Navbar() {
     setNav(!nav);
   }
 
+  useEffect(()=>{
+    if(nav){
+      document.body.style.overflow = 'hidden';
+    }
+    return()=>{
+      document.body.style.overflow = 'unset';
+    }
+
+  }, [nav])
+
   const [shadow, setShadow] = useState(false);
   useEffect(() => {
     const handleShadow = () => {
@@ -59,7 +69,7 @@ function Navbar() {
 
 
   return (
-    <div className={shadow ? ('fixed bg-[#030303] w-full h-20 z-[100] shadow-xl') : ('fixed bg-[#030303] w-full h-20 z-[100]')}>
+    <div className={shadow ? ('fixed backdrop-blur-sm s  bg-[#030303]/90 w-full h-20 z-[100]') : ('fixed bg-[#030303] w-full h-20 z-[100]')}>
       <div className='flex justify-between items-center w-full h-full  px-4 2xl:px-16'>
         <Image src={Logo} alt="/" width='75' height='50' />
         <div>
@@ -68,13 +78,13 @@ function Navbar() {
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Home</li>
             </Link>
 
-            <Link href="/#about">
+            <Link href="/#schedule">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Schedule</li>
             </Link>
-            <Link href="/#skills">
+            <Link href="/photos">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Gallery</li>
             </Link>
-            <Link href="/#projects">
+            <Link href="/#winners">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Winners</li>
             </Link>
             <Link href="/#contact">
@@ -97,7 +107,7 @@ function Navbar() {
       </div>
       <div className={nav ? 'md:hidden fixed left-0 top-0 h-screen w-full bg-black/70' : ''}>
         <div className={nav ? 'fixed  right-0 top-0 bg-[#fe0109] px-4 py-4 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200' :
-          'fixed  right-[-100%] top-0 bg-[#ecf0f3] p-10 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200'}>
+          'fixed  right-[-100%] top-0 bg-[#fe0109] p-10 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200'}>
           <div className=' flex flex-col w-full h-full justify-between'>
             <div className=''>
               <div className='flex items-center justify-between'>
@@ -119,13 +129,13 @@ function Navbar() {
                 <Link href='/#home'>
                   <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Home</li>
                 </Link>
-                <Link href='/#about'>
+                <Link href='/#schedule'>
                   <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150' >Schedule</li>
                 </Link>
-                <Link href='/#skills'>
+                <Link href='/photos'>
                   <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Gallery</li>
                 </Link>
-                <Link href='/#projects'>
+                <Link href='/#winners'>
                   <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Winners</li>
                 </Link>
                 <Link href='/#contact'>
