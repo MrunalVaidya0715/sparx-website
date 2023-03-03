@@ -156,10 +156,12 @@ function Navbar() {
               <p className='uppercase pl-2 tracking-widest text-black font-medium'>Let's Connect</p>
               <div>
                 <div className='flex justify-start gap-5 items-center w-full  sm:w-[85%]'>
-
+                  <Link href="https://instagram.com/sparx.2023?igshid=YmMyMTA2M2Y=">
                   <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
                     <FaInstagram size={25} className="hover:scale-150 transition-all ease-in duration-150" />
                   </div>
+                  </Link>
+                  
                   <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
                     <BsFillPersonLinesFill size={25} className="hover:scale-150 transition-all ease-in duration-150" />
                   </div>
