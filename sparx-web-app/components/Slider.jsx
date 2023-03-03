@@ -31,7 +31,7 @@ const Slider = () => {
 
     }
     useEffect(() => {
-        const intervalId = setTimeout(autoc, 1000)
+        const intervalId = setTimeout(autoc, 3000)
         return () => clearTimeout(intervalId)
 
     }, [currentIndex])

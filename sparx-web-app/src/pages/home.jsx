@@ -17,8 +17,7 @@ const home = () => {
       <div className=' max-w-[1240px] w-full h-fit p-4 flex flex-col justify-center items-center'>
         <h1>Sparx </h1>
         <h3>March 6 - March 30</h3>
-        <PointsTable/>
-        <Table/>
+        
       </div>
     </div>
   )
