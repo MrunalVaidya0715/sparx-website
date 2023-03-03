@@ -10,11 +10,7 @@ export default function Home() {
         <p>Hello</p>
         <button>Hello</button>
       </div> */}
-      <div className="py-20 relative  flex flex-col justify-center items-center ">
-        <div className=" w-full">
-          <Slider />
-        </div>
-      </div>
+      
     </>
   )
 }

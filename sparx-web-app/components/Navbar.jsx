@@ -15,11 +15,11 @@ function Navbar() {
     setNav(!nav);
   }
 
-  useEffect(()=>{
-    if(nav){
+  useEffect(() => {
+    if (nav) {
       document.body.style.overflow = 'hidden';
     }
-    return()=>{
+    return () => {
       document.body.style.overflow = 'unset';
     }
 
@@ -74,6 +74,9 @@ function Navbar() {
         <Image src={Logo} alt="/" width='75' height='50' />
         <div>
           <ul className='hidden md:flex  text-[#9D9D9E]'>
+            <Link href='/home'>
+              <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Home</li>
+            </Link>
             <Link href="/points">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Points-Table</li>
             </Link>
@@ -87,9 +90,7 @@ function Navbar() {
             <Link href="/#winners">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Winners</li>
             </Link>
-            <Link href="/#contact">
-              <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Contact</li>
-            </Link>
+
 
           </ul>
           <div onClick={handleNav} className='md:hidden cursor-pointer'>
@@ -126,6 +127,9 @@ function Navbar() {
             </div>
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-9' >
+                <Link href='/home'>
+                  <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Home</li>
+                </Link>
                 <Link href='/points'>
                   <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Points-Table</li>
                 </Link>
@@ -138,9 +142,7 @@ function Navbar() {
                 <Link href='/#winners'>
                   <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Winners</li>
                 </Link>
-                <Link href='/#contact'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Contact</li>
-                </Link>
+
 
               </ul>
 
@@ -154,10 +156,10 @@ function Navbar() {
                     <FaInstagram size={25} />
                   </div>
                   <div className='rounded-full bg-white text-black p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <BsFillPersonLinesFill size={25}/>
+                    <BsFillPersonLinesFill size={25} />
                   </div>
 
-                  
+
                 </div>
               </div>
             </div>
