@@ -19,6 +19,7 @@ const home = () => {
         <h1 className=' text-red-500'>Sparx </h1>
         <h3>March 6 - March 30</h3>
         <Image src={img1} alt='/' width={200} height={150} />
+        <Image src="/assets/image-0.png" alt='/' width={200} height={150} />
         
       </div>
     </div>

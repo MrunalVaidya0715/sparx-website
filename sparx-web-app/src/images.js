@@ -79,74 +79,74 @@ export const Photos =
 [
   {
     id: 1,
-    imgSrc: '/../public/assets/image-0.png'
+    imgSrc: '/assets/image-0.png'
   },
   {
     id: 2,
-    imgSrc: '/../public/assets/image-1.png'
+    imgSrc: '/assets/image-1.png'
   },
   {
     id: 3,
-    imgSrc: '/../public/assets/image-2.png'
+    imgSrc: '/assets/image-2.png'
   },
   {
     id: 4,
-    imgSrc: '/../public/assets/image-3.png'
+    imgSrc: '/assets/image-3.png'
   },
   {
     id: 5,
-    imgSrc: '/../public/assets/image-4.png'
+    imgSrc: '/assets/image-4.png'
   },
   {
     id: 6,
-    imgSrc: '/../public/assets/image-5.png'
+    imgSrc: '/assets/image-5.png'
   },
   {
     id: 7,
-    imgSrc: '/../public/assets/image-6.png'
+    imgSrc: '/assets/image-6.png'
   },
   {
     id: 8,
-    imgSrc: '/../public/assets/image-7.png'
+    imgSrc: '/assets/image-7.png'
   },
   {
     id: 9,
-    imgSrc: '/../public/assets/image-8.png'
+    imgSrc: '/assets/image-8.png'
   },
   {
     id: 10,
-    imgSrc: '/../public/assets/image-9.png'
+    imgSrc: '/assets/image-9.png'
   },
   {
     id: 11,
-    imgSrc: '/../public/assets/image-10.png'
+    imgSrc: '/assets/image-10.png'
   },
   {
     id: 12,
-    imgSrc: '/../public/assets/image-11.png'
+    imgSrc: '/assets/image-11.png'
   },
   {
     id: 13,
-    imgSrc: '/../public/assets/image-12.png'
+    imgSrc: '/assets/image-12.png'
   },
   {
     id: 14,
-    imgSrc: '/../public/assets/image-13.png'
+    imgSrc: '/assets/image-13.png'
   },
   {
     id: 15,
-    imgSrc: '/../public/assets/image-14.png'
+    imgSrc: '/assets/image-14.png'
   },
   {
     id: 16,
-    imgSrc: '/../public/assets/image-15.png'
+    imgSrc: '/assets/image-15.png'
   },
   {
     id: 17,
-    imgSrc: '/../public/assets/image-16.png'
+    imgSrc: '/assets/image-16.png'
   },
   {
     id: 18,
-    imgSrc: '/../public/assets/image-17.png'
+    imgSrc: '/assets/image-17.png'
   }
 ]
