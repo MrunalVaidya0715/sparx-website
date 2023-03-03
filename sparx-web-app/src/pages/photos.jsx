@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-const Images = lazy(() => import("../../components/Images.jsx"))
-import { lazy, Suspense } from 'react'
+import Images from 'components/Images.jsx'
+import Image from 'next/image'
 import { AiOutlineClose } from 'react-icons/ai'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 
 const photos = () => {
     const [modal, setModal] = useState(false)
@@ -37,10 +37,7 @@ const photos = () => {
                         </h2>
                         <div className=' py-5 lg:py-8 w-full p-2 lg:p-0 flex justify-center items-center flex-col'>
                             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-
-                                <Suspense fallback={<div>Loading..</div>}>
-                                    <Images getImg={getImg} />
-                                </Suspense>
+                                <Images getImg={getImg} />
                             </div>
 
                         </div>
@@ -51,7 +48,9 @@ const photos = () => {
                 <div className=' absolute top-2 right-2 cursor-pointer bg-white/20 hover:bg-white/70 p-2 rounded-full' onClick={() => setModal(false)}>
                     <AiOutlineClose size={20} />
                 </div>
-                <img src={tempSrc} alt="/" />
+                <div className=' relative'>
+                    <Image className=' object-fill object-center' src={tempSrc} alt="/" width={500} height={300} layout="responsive" />
+                </div>
 
             </div>
         </>

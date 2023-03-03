@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai'
 import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router';
-import Logo from '../public/assets/navLogo.png'
+import Logo from '../public/assets/sparxLogo.png'
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [navBg, setNavBg] = useState('#030303');

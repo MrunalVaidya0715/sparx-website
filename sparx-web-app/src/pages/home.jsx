@@ -1,4 +1,5 @@
 import Slider from 'components/Slider'
+import SlideSwiper from 'components/SlideSwiper'
 import React from 'react'
 
 const home = () => {
