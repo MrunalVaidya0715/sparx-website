@@ -80,20 +80,20 @@ function Navbar() {
         <Image src={Logo} alt="/" width='75' height='50' />
         <div>
           <ul className='hidden md:flex  text-[#9D9D9E]'>
-            <Link href='/home'>
+            <Link href='/'>
               <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Home</li>
             </Link>
             <Link href="/points">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Points-Table</li>
             </Link>
 
-            <Link href="/#schedule">
+            <Link href="/schedule">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Schedule</li>
             </Link>
             <Link href="/photos">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Gallery</li>
             </Link>
-            <Link href="/#winners">
+            <Link href="/winners">
               <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Winners</li>
             </Link>
 
@@ -139,13 +139,13 @@ function Navbar() {
                 <Link href='/points'>
                   <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2'/>Points-Table</div></li>
                 </Link>
-                <Link href='/#schedule'>
+                <Link href='/schedule'>
                   <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150' ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
                 </Link>
                 <Link href='/photos'>
                   <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><TfiGallery className=' mr-2'/>Gallery</div></li>
                 </Link>
-                <Link href='/#winners'>
+                <Link href='/winners'>
                   <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
                 </Link>
 

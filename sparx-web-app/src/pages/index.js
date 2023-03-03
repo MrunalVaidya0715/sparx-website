@@ -1,5 +1,5 @@
 import Slider from "components/Slider";
-
+import Homey from './home'
 
 
 export default function Home() {
@@ -10,6 +10,7 @@ export default function Home() {
         <p>Hello</p>
         <button>Hello</button>
       </div> */}
+      <Homey/>
       
     </>
   )
