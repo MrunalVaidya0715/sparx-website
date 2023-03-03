@@ -107,7 +107,7 @@ function Navbar() {
 
       </div>
       <div className={nav ? 'md:hidden fixed left-0 top-0 h-full w-full bg-black/70' : ''}>
-        <div className={nav ? 'fixed  right-0 top-0 bg-[#fe0109] px-4 py-0 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200' :
+        <div className={nav ? 'fixed  right-0 top-0 bg-[#fe0109] bg-gradient-to-b from-[#fe0109] via-yellow-500 to-[#ad1015] px-4 py-0 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200' :
           'fixed  right-[-100%] top-0 bg-[#fe0109] p-10 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200'}>
           <div className=' flex flex-col w-full h-full justify-between'>
             <div className=''>
@@ -119,7 +119,7 @@ function Navbar() {
 
               </div>
               <div className=' border-b-2 border-gray-300 p-1 text-[#f5f5f5]'>
-                <p className='py-3 w-[85%] md:w-[90%] '>Worth the Hype</p>
+                <p className='py-3 w-[85%] md:w-[90%] text-3xl text-yellow-400 font-bold font-sans'>Worth the Hype</p>
               </div>
 
 
@@ -128,26 +128,26 @@ function Navbar() {
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-9' >
                 <Link href='/home'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Home</li>
+                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'>Home</li>
                 </Link>
                 <Link href='/points'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Points-Table</li>
+                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'>Points-Table</li>
                 </Link>
                 <Link href='/#schedule'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150' >Schedule</li>
+                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150' >Schedule</li>
                 </Link>
                 <Link href='/photos'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Gallery</li>
+                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'>Gallery</li>
                 </Link>
                 <Link href='/#winners'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Winners</li>
+                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'>Winners</li>
                 </Link>
 
 
               </ul>
 
             </div>
-            <div className='flex flex-col gap-2 bottom-10'>
+            <div className='flex flex-col gap-2 bottom-10 my-4'>
               <p className='uppercase pl-2 tracking-widest text-white'>Let's Connect</p>
               <div>
                 <div className='flex justify-start gap-5 items-center w-full  sm:w-[85%]'>
