@@ -29,7 +29,7 @@ const photos = () => {
 
     return (
         <>
-            <div className=' relative top-20 flex flex-col justify-center items-center'>
+            <div className=' py-20 flex flex-col justify-center items-center'>
                 <div className=' max-w-[1240px] w-full'>
                     <div className=' flex flex-col justify-center items-center'>
                         <h2 className='text-white'>
