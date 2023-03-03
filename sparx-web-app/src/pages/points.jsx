@@ -50,7 +50,7 @@ const points = () => {
             points: 10,
         },
     ]
-    const [showPoint, setShowPoint] = useState(true)
+    const [showPoint, setShowPoint] = useState(false)
 
     const viewDetails = () => {
         setShowPoint(prev => !prev)
@@ -98,7 +98,12 @@ const points = () => {
     return (
         <div className='py-20  relative  flex flex-col justify-center items-center'>
             <div className=' p-2 flex flex-col justify-center items-center'>
-                <h2>SPARX 2023 Points Table</h2>
+                <h1 className=' tracking-wider'>
+                    <span className=' text-red-500'>SPARX </span>
+                    2023
+                    
+                </h1>
+                <h2>Points Table</h2>
                 <div className=' mt-4'>
                     <p className=' text-gray-500 text-sm'>[ Last updated on 03-03-2023 ]</p>
                 </div>
