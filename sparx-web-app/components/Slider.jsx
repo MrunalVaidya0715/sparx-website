@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import img1 from '../public/assets/inaug/image-1.png'
+import img1 from '../public/assets/image-1.png'
 import { Photos } from '../src/images.js'
 const Slider = () => {
     const slides = [

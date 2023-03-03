@@ -69,7 +69,7 @@ function Navbar() {
 
 
   return (
-    <div className={shadow ? ('fixed backdrop-blur-sm s  bg-[#030303]/90 w-full h-20 z-[100]') : ('fixed bg-[#030303] w-full h-20 z-[100]')}>
+    <div className={shadow ? ('fixed backdrop-blur-sm bg-[#030303]/90 w-full h-20 z-[100]') : ('fixed bg-[#030303] w-full h-20 z-[100]')}>
       <div className='flex justify-between items-center w-full h-full  px-4 2xl:px-16'>
         <Image src={Logo} alt="/" width='75' height='50' />
         <div>
@@ -107,7 +107,7 @@ function Navbar() {
 
       </div>
       <div className={nav ? 'md:hidden fixed left-0 top-0 h-full w-full bg-black/70' : ''}>
-        <div className={nav ? 'fixed  right-0 top-0 bg-[#fe0109] px-4 py-4 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200' :
+        <div className={nav ? 'fixed  right-0 top-0 bg-[#fe0109] px-4 py-0 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200' :
           'fixed  right-[-100%] top-0 bg-[#fe0109] p-10 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200'}>
           <div className=' flex flex-col w-full h-full justify-between'>
             <div className=''>

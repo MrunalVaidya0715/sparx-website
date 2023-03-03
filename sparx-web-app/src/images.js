@@ -79,74 +79,74 @@ export const Photos =
 [
   {
     id: 1,
-    imgSrc: '/../public/assets/inaug/image-0.png'
+    imgSrc: '/../public/assets/image-0.png'
   },
   {
     id: 2,
-    imgSrc: '/../public/assets/inaug/image-1.png'
+    imgSrc: '/../public/assets/image-1.png'
   },
   {
     id: 3,
-    imgSrc: '/../public/assets/inaug/image-2.png'
+    imgSrc: '/../public/assets/image-2.png'
   },
   {
     id: 4,
-    imgSrc: '/../public/assets/inaug/image-3.png'
+    imgSrc: '/../public/assets/image-3.png'
   },
   {
     id: 5,
-    imgSrc: '/../public/assets/inaug/image-4.png'
+    imgSrc: '/../public/assets/image-4.png'
   },
   {
     id: 6,
-    imgSrc: '/../public/assets/inaug/image-5.png'
+    imgSrc: '/../public/assets/image-5.png'
   },
   {
     id: 7,
-    imgSrc: '/../public/assets/inaug/image-6.png'
+    imgSrc: '/../public/assets/image-6.png'
   },
   {
     id: 8,
-    imgSrc: '/../public/assets/inaug/image-7.png'
+    imgSrc: '/../public/assets/image-7.png'
   },
   {
     id: 9,
-    imgSrc: '/../public/assets/inaug/image-8.png'
+    imgSrc: '/../public/assets/image-8.png'
   },
   {
     id: 10,
-    imgSrc: '/../public/assets/inaug/image-9.png'
+    imgSrc: '/../public/assets/image-9.png'
   },
   {
     id: 11,
-    imgSrc: '/../public/assets/inaug/image-10.png'
+    imgSrc: '/../public/assets/image-10.png'
   },
   {
     id: 12,
-    imgSrc: '/../public/assets/inaug/image-11.png'
+    imgSrc: '/../public/assets/image-11.png'
   },
   {
     id: 13,
-    imgSrc: '/../public/assets/inaug/image-12.png'
+    imgSrc: '/../public/assets/image-12.png'
   },
   {
     id: 14,
-    imgSrc: '/../public/assets/inaug/image-13.png'
+    imgSrc: '/../public/assets/image-13.png'
   },
   {
     id: 15,
-    imgSrc: '/../public/assets/inaug/image-14.png'
+    imgSrc: '/../public/assets/image-14.png'
   },
   {
     id: 16,
-    imgSrc: '/../public/assets/inaug/image-15.png'
+    imgSrc: '/../public/assets/image-15.png'
   },
   {
     id: 17,
-    imgSrc: '/../public/assets/inaug/image-16.png'
+    imgSrc: '/../public/assets/image-16.png'
   },
   {
     id: 18,
-    imgSrc: '/../public/assets/inaug/image-17.png'
+    imgSrc: '/../public/assets/image-17.png'
   }
 ]
