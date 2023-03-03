@@ -9,7 +9,7 @@ import Logo from '../public/assets/sparxLogo.png'
 import {AiFillHome} from 'react-icons/ai'
 import {MdLeaderboard} from 'react-icons/md'
 import {AiFillSchedule} from 'react-icons/ai'
-import {GrGallery} from 'react-icons/gr'
+import {TfiGallery} from 'react-icons/tfi'
 import {AiFillTrophy} from 'react-icons/ai'
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -133,19 +133,19 @@ function Navbar() {
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-9' >
                 <Link href='/home'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
                 </Link>
                 <Link href='/points'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'>Points-Table</li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2'/>Points-Table</div></li>
                 </Link>
                 <Link href='/#schedule'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150' >Schedule</li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150' ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
                 </Link>
                 <Link href='/photos'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'>Gallery</li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><TfiGallery className=' mr-2'/>Gallery</div></li>
                 </Link>
                 <Link href='/#winners'>
-                  <li onClick={() => setNav(false)} className='ml-8 text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'>Winners</li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
                 </Link>
 
 
@@ -153,15 +153,15 @@ function Navbar() {
 
             </div>
             <div className='flex flex-col gap-2 bottom-10 my-4'>
-              <p className='uppercase pl-2 tracking-widest text-white'>Let's Connect</p>
+              <p className='uppercase pl-2 tracking-widest text-black font-medium'>Let's Connect</p>
               <div>
                 <div className='flex justify-start gap-5 items-center w-full  sm:w-[85%]'>
 
-                  <div className='rounded-full bg-white text-black p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <FaInstagram size={25} />
+                  <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
+                    <FaInstagram size={25} className="hover:scale-150 transition-all ease-in duration-150" />
                   </div>
-                  <div className='rounded-full bg-white text-black p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <BsFillPersonLinesFill size={25} />
+                  <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
+                    <BsFillPersonLinesFill size={25} className="hover:scale-150 transition-all ease-in duration-150" />
                   </div>
 
 
