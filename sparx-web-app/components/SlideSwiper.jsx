@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import {Photos} from '../src/images.js'
 import React from 'react'
-import Img0 from '../public/assets/inaug/image-1.png'
+import Img0 from '../public/assets/image-1.png'
 import Image from 'next/image';
 const SlideSwiper = () => {
     SwiperCore.use([Autoplay])
