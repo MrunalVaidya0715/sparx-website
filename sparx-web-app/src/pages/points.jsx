@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import DataTable from 'react-data-table-component'
 import { AiTwotoneTrophy } from 'react-icons/ai'
 import { AiTwotoneStar } from 'react-icons/ai'
 const points = () => {
@@ -49,9 +50,48 @@ const points = () => {
             points: 10,
         },
     ]
+    const [showPoint, setShowPoint] = useState(true)
 
     const viewDetails = () => {
-        console.log("Hello")
+        setShowPoint(prev => !prev)
+    }
+
+    const rankCol = [
+        {
+            name: "Place",
+            selector: row => row.rank
+        },
+        {
+            name: "Points",
+            selector: row => row.points,
+            sortable: true,
+
+        },
+    ]
+    const rankData = [
+        {
+            rank: 1,
+            points: "50 pts"
+        },
+        {
+            rank: 2,
+            points: "30 pts"
+        },
+        {
+            rank: 3,
+            points: "20 pts"
+        },
+    ]
+
+    const customStyles = {
+        rows: {
+            style: {
+                backgroundColor: "#252a34",
+                color: "white"
+            }
+        },
+
+
     }
 
 
@@ -112,7 +152,18 @@ const points = () => {
                 </div>
             </div>
             <div className=' mt-8'>
-                <h3 className=' text-blue-400 tracking-wider cursor-pointer' onClick={viewDetails}>View Points Details</h3>
+                <h3 className=' text-blue-400 tracking-wider cursor-pointer' onClick={viewDetails}>
+                    {
+                        showPoint ? "Hide Points Details" : " Show Points Details"
+                    }
+                </h3>
+            </div>
+            <div className={showPoint ? " mt-4 flex flex-col justify-center items-center" : "hidden"}>
+                <DataTable columns={rankCol} data={rankData}
+                    customStyles={customStyles}
+                >
+
+                </DataTable>
             </div>
         </div>
     )
