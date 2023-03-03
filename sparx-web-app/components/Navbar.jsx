@@ -124,7 +124,7 @@ function Navbar() {
 
               </div>
               <div className=' border-b-2 border-gray-300 p-1 text-[#f5f5f5]'>
-                <p className='py-3 w-[85%] md:w-[90%] text-3xl text-yellow-400 font-bold font-sans'>Worth the Hype</p>
+                <p className='py-3 w-[85%] md:w-[90%] text-xl md:text-3xl text-yellow-400 font-bold font-sans'>Worth the Hype</p>
               </div>
 
 
@@ -133,19 +133,19 @@ function Navbar() {
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-9' >
                 <Link href='/home'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
                 </Link>
                 <Link href='/points'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2'/>Points-Table</div></li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2'/>Points-Table</div></li>
                 </Link>
                 <Link href='/#schedule'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150' ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150' ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
                 </Link>
                 <Link href='/photos'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><TfiGallery className=' mr-2'/>Gallery</div></li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><TfiGallery className=' mr-2'/>Gallery</div></li>
                 </Link>
                 <Link href='/#winners'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
                 </Link>
 
 
