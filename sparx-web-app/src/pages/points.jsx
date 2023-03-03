@@ -133,8 +133,8 @@ const points = () => {
                     {
                         data.map((row, index) => (
                             <div key={index} className={
-                                row.rank % 2 !== 1 ? ("w-full pl-2 flex items-center justify-between bg-gray-700 text-lg") :
-                                    ("w-full pl-2 flex items-center justify-between bg-[#252a34]  text-lg ")
+                                row.rank % 2 !== 1 ? ("w-full pl-2 flex items-center justify-between bg-gray-700 text-mdmd:text-lg") :
+                                    ("w-full pl-2 flex items-center justify-between bg-[#252a34] text-md md:text-lg ")
                             }
                             >
                                 <div className={row.rank === 1 ? "text-[#C9B037]" : row.rank === 2 ? "text-[#c0c0c0]" : row.rank === 3 ? "text-[#AD8A56]" : " text-gray-100"}>
