@@ -11,6 +11,7 @@ import {MdLeaderboard} from 'react-icons/md'
 import {AiFillSchedule} from 'react-icons/ai'
 import {TfiGallery} from 'react-icons/tfi'
 import {AiFillTrophy} from 'react-icons/ai'
+import {SlBookOpen} from 'react-icons/sl'
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [navBg, setNavBg] = useState('#030303');
@@ -163,7 +164,7 @@ function Navbar() {
                   </Link>
                   
                   <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
-                    <BsFillPersonLinesFill size={25} className="hover:scale-150 transition-all ease-in duration-150" />
+                    <SlBookOpen size={25} className="hover:scale-150 transition-all ease-in duration-150" />
                   </div>
 
 
