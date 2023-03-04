@@ -6,8 +6,7 @@ import ShadeLight2 from 'components/ShadeLight2'
 export default function App({ Component, pageProps }) {
   return (<>
     <Navbar/>
-    <ShadeLight/>
-    <ShadeLight2/>
+    
     <Component {...pageProps}/>
   
   </>)
