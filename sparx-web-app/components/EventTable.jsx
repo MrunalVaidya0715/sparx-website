@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EventTable = ({event, from, to, gender, stage}) => {
+const EventTable = ({ event, from, to, gender, stage }) => {
     return (
         <>
             <div className=' flex items-end justify-between px-0 w-full mb-2' >
@@ -10,6 +10,10 @@ const EventTable = ({event, from, to, gender, stage}) => {
                     {/**from */}
                     <div className='py-2'>
                         <h3 className=' font-thin tracking-wider uppercase text-gray-200'>{from}</h3>
+
+                    </div>
+                    <div>
+                        <h3 className=' font-thin tracking-wider uppercase text-gray-500'>|</h3>
 
                     </div>
                     {/**to */}
