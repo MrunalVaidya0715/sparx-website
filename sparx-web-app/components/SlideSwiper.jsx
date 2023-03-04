@@ -14,14 +14,14 @@ import Image from 'next/image';
 const SlideSwiper = () => {
     SwiperCore.use([Autoplay])
     return (
-        <Swiper className=' border-2 border-white flex flex-col items-center justify-center'
+        <Swiper className=' rounded-full max-w-[1080px] flex flex-col items-center justify-center'
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={0}
-            slidesPerView={1}
+            spaceBetween={50}
+            slidesPerView={3}
             loop={true}
             autoplay={{
-                delay: 1000,
+                delay: 5000,
             }}
             navigation
             pagination={{ clickable: true }}
@@ -34,7 +34,7 @@ const SlideSwiper = () => {
         {
             Photos.map((photo)=>(
                 <SwiperSlide key={photo.id} className=" flex items-center justify-center">
-                    <Image className=' object-cover object-center h-[28rem] w-full' src={photo.imgSrc} alt="/" width={550} height={300}/>
+                    <Image className=' object-cover object-center h-[28rem] w-full' src={photo.imgSrc} alt="/" width={50} height={30}/>
 
                 </SwiperSlide>
             ))
