@@ -57,13 +57,13 @@ const Slider = () => {
 
     return (
         <div className=' flex flex-col justify-center items-center'>
-            <div className=' max-w-[1024px] h-[22rem] md:h-[22rem] lg:h-[30rem] xl:h-[32rem] px-2 w-full flex flex-col justify-center items-center relative group'>
-                <div
-                    style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                    className='w-full relative h-full rounded-lg bg-center bg-cover duration-500 flex items-center justify-center'
-                >
+            <div className=' max-w-[1024px] h-[22rem] sm:h-[26rem] md:h-[28rem] lg:h-[30rem] xl:h-[32rem] px-2 w-full flex flex-col justify-center items-center relative group'>
+                <div className='w-full relative h-full rounded-lg bg-center bg-cover duration-500 flex items-center justify-center'>
+                    <div className=' relative w-full h-full'>
+                        <Image className=' rounded-lg bg-center bg-cover object-cover' src={`${slides[currentIndex].url}`} alt="/" layout='fill' />
+                    </div>
                     <div className=' absolute bottom-1 p-1 px-2 bg-black/50 rounded-md backdrop-blur-sm'>
-                        <h2 className=' font-thin'>{`${slides[currentIndex].desc}`}</h2>
+                        <h2 className=' font-thin text-lg md:text-2xl lg:text-3xl'>{`${slides[currentIndex].desc}`}</h2>
                     </div>
 
 

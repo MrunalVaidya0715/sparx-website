@@ -48,8 +48,8 @@ const photos = () => {
                 <div className=' absolute top-2 right-2 cursor-pointer bg-white/20 hover:bg-white/70 p-2 rounded-full' onClick={() => setModal(false)}>
                     <AiOutlineClose size={20} />
                 </div>
-                <div className=' relative'>
-                    <Image className=' object-fill object-center' src={tempSrc} alt="/" width={500} height={300} layout="responsive" />
+                <div className=' relative p-10'>
+                    <Image className=' object-fill object-center' src={tempSrc} alt="/" width={500} height={300}  quality={80}/>
                 </div>
 
             </div>

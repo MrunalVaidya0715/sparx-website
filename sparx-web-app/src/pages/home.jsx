@@ -17,7 +17,8 @@ const home = () => {
       </div>
       <div className=' max-w-[1240px] w-full h-fit p-4 flex flex-col justify-center items-center'>
         <h1 className=' text-red-500'>Sparx </h1>
-        <h3>March 6 - March 30</h3>
+        <h3 className=' font-light tracking-wider'>March 6 Onwards</h3>
+        
         
         
       </div>
