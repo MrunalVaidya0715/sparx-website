@@ -81,20 +81,20 @@ function Navbar() {
         <div>
           <ul className='hidden md:flex  text-[#9D9D9E]'>
             <Link href='/'>
-              <li onClick={() => setNav(false)} className='ml-8 text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150'>Home</li>
+              <li onClick={() => setNav(false)} className={`ml-8 ${router.asPath === '/' ? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Home</li>
             </Link>
             <Link href="/points">
-              <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Points-Table</li>
+              <li className={`ml-8 ${router.asPath === '/points'? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Points-Table</li>
             </Link>
 
             <Link href="/schedule">
-              <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Schedule</li>
+              <li className={`ml-8 ${router.asPath === '/schedule'? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Schedule</li>
             </Link>
             <Link href="/photos">
-              <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Gallery</li>
+              <li className={`ml-8 ${router.asPath === '/photos'? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Gallery</li>
             </Link>
             <Link href="/winners">
-              <li className='ml-8 text-md font-medium uppercase hover:text-white ease-in duration-150'>Winners</li>
+              <li className={`ml-8 ${router.asPath === '/winners'? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Winners</li>
             </Link>
 
 
@@ -134,19 +134,19 @@ function Navbar() {
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-9' >
                 <Link href='/home'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
                 </Link>
                 <Link href='/points'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2'/>Points-Table</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/points' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2'/>Points-Table</div></li>
                 </Link>
                 <Link href='/schedule'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150' ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/schedule' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`} ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
                 </Link>
                 <Link href='/photos'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><IoMdPhotos className=' mr-2'/>Gallery</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/photos' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><IoMdPhotos className=' mr-2'/>Gallery</div></li>
                 </Link>
                 <Link href='/winners'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/winners' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
                 </Link>
 
 
