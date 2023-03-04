@@ -9,7 +9,7 @@ import Logo from '../public/assets/sparxLogo.png'
 import {AiFillHome} from 'react-icons/ai'
 import {MdLeaderboard} from 'react-icons/md'
 import {AiFillSchedule} from 'react-icons/ai'
-import {TfiGallery} from 'react-icons/tfi'
+import {IoMdPhotos} from 'react-icons/io'
 import {AiFillTrophy} from 'react-icons/ai'
 import {SlBookOpen} from 'react-icons/sl'
 function Navbar() {
@@ -143,7 +143,7 @@ function Navbar() {
                   <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150' ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
                 </Link>
                 <Link href='/photos'>
-                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><TfiGallery className=' mr-2'/>Gallery</div></li>
+                  <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><IoMdPhotos className=' mr-2'/>Gallery</div></li>
                 </Link>
                 <Link href='/winners'>
                   <li onClick={() => setNav(false)} className='ml-4 hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150'><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
@@ -159,12 +159,12 @@ function Navbar() {
                 <div className='flex justify-start gap-5 items-center w-full  sm:w-[85%]'>
                   <Link href="https://instagram.com/sparx.2023?igshid=YmMyMTA2M2Y=">
                   <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
-                    <FaInstagram size={25} className="hover:scale-150 transition-all ease-in duration-150" />
+                    <FaInstagram size={20} className="hover:scale-150 transition-all ease-in duration-150" />
                   </div>
                   </Link>
                   
                   <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
-                    <SlBookOpen size={25} className="hover:scale-150 transition-all ease-in duration-150" />
+                    <SlBookOpen size={20} className="hover:scale-150 transition-all ease-in duration-150" />
                   </div>
 
 
