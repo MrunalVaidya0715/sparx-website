@@ -32,7 +32,7 @@ const photos = () => {
             <div className=' py-20 flex flex-col justify-center items-center'>
                 <div className=' max-w-[1240px] w-full'>
                     <div className=' flex flex-col justify-center items-center'>
-                        <h2 className='text-white'>
+                        <h2 className='text-white font-light tracking-wide'>
                             Gallery
                         </h2>
                         <div className=' py-5 lg:py-8 w-full p-4 lg:p-0 flex justify-center items-center flex-col'>

@@ -99,29 +99,29 @@ const points = () => {
     return (
         <div className='py-20  relative  flex flex-col justify-center items-center'>
             <div className=' p-2 flex flex-col justify-center items-center'>
-                <h1 className=' tracking-wider'>
-                    <span className=' text-red-500'>SPARX </span>
+                <h1 className=''>
+                    <span className=' tracking-wide text-red-500'>SPARX </span>
                     2023
                     
                 </h1>
-                <h2>Points Table</h2>
+                <h2 className=' font-light'>Points Table</h2>
                 <div className=' mt-4'>
                     <p className=' text-gray-500 text-sm'>[ Last updated on 03-03-2023 ]</p>
                 </div>
             </div>
             <div className='  w-[85%] lg:[75%] max-w-[500px] h-[500px] no-scrollbar overflow-y-auto flex flex-col justify-center mt-2  items-center rounded-lg  border-[1px] border-gray-500'>
                 <div className=' w-full h-full flex flex-col justify-between items-center'>
-                    <div className=' w-full flex items-center justify-between bg-[#15181E]/80'>
+                    <div className=' w-full flex items-center justify-between bg-gray-700/50 backdrop-blur-md'>
                         <div className=' w-fit pl-2'>
                             <GiTrophiesShelf size={25}/>
                         </div>
-                        <div className='  w-full p-4 ml-2 text-lg'>
+                        <div className='  w-full p-4 ml-2 text-lg lg:text-xl'>
                             <h3 className=' text-gray-600 font-light'>Rank</h3>
                         </div>
-                        <div className='  w-full p-2 text-lg'>
+                        <div className='  w-full p-2 text-lg lg:text-xl'>
                             <h3 className=' text-gray-600 font-light'>Class</h3>
                         </div>
-                        <div className='  w-full p-4 text-lg'>
+                        <div className='  w-full p-4 text-lg lg:text-xl'>
                             <h3 className=' text-gray-600 font-light'>Points</h3>
                         </div>
                         {/*Entry */}
@@ -133,8 +133,8 @@ const points = () => {
                     {
                         data.map((row, index) => (
                             <div key={index} className={
-                                row.rank % 2 !== 1 ? ("w-full pl-2 flex items-center justify-between bg-gray-700 text-md md:text-lg") :
-                                    ("w-full pl-2 flex items-center justify-between bg-[#252a34] text-md md:text-lg ")
+                                row.rank % 2 !== 1 ? ("w-full pl-2 flex items-center justify-between bg-gray-900/50 text-md md:text-lg") :
+                                    ("w-full pl-2 flex items-center justify-between bg-gray-900/90 backdrop-blur-sm text-md md:text-lg ")
                             }
                             >
                                 <div className={row.rank === 1 ? "text-[#C9B037]" : row.rank === 2 ? "text-[#c0c0c0]" : row.rank === 3 ? "text-[#AD8A56]" : " text-gray-100"}>
@@ -152,7 +152,7 @@ const points = () => {
                                     <p className=' text-gray-400 font-medium'>{row.class}</p>
                                 </div>
                                 <div className=' w-full pl-10 p-4'>
-                                    <h3 className=' text-gray-200'>{row.points}</h3>
+                                    <h3 className=' text-[#e6c098]'>{row.points}</h3>
                                 </div>
                             </div>
                         ))
