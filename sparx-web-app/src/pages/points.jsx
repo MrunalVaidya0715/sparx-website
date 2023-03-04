@@ -109,7 +109,7 @@ const points = () => {
                     <p className=' text-gray-500 text-sm'>[ Last updated on 03-03-2023 ]</p>
                 </div>
             </div>
-            <div className='  w-[85%] lg:[75%] max-w-[500px] h-[500px] no-scrollbar overflow-y-auto flex flex-col justify-center mt-2  items-center rounded-lg  border-[1px] border-gray-500'>
+            <div className='  w-[85%] lg:[75%] max-w-[500px] overflow-hidden flex flex-col justify-center mt-2  items-center rounded-lg  border-[1px] border-gray-500'>
                 <div className=' w-full h-full flex flex-col justify-between items-center'>
                     <div className=' w-full flex items-center justify-between bg-gray-700/50 backdrop-blur-md'>
                         <div className=' w-fit pl-2'>
