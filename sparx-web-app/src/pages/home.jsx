@@ -22,8 +22,8 @@ const home = () => {
         <h3 className=' font-light text-lds tracking-wider'>March 6 Onwards</h3>
 
 
-        <h2 className=' mt-4 mb-8'>Meet our Admins</h2>
-        <div className=' max-w-[1024px] w-full overflow-hidden'>
+        <h2 className=' mt-4 text-md mb-8'>Meet our Admins</h2>
+        <div className=' max-w-[1024px] w-full overflow-hidden '>
           <Marquee className=" mb-10" loop={false} speed={35} gradient={false} pauseOnHover={true} pauseOnClick={true}>
             <Admins/>
           </Marquee>

@@ -46,7 +46,7 @@ export const AdminsList = [
     },
     {
         id: 10,
-        name: "Anirudh",
+        name: "Anirudha",
         imgSrc: "/assets/me-back.jpg"
     },
 
