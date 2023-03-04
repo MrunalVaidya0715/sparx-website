@@ -49,7 +49,7 @@ const photos = () => {
                     <AiOutlineClose size={20} />
                 </div>
                 <div className=' relative p-10'>
-                    <Image className=' object-fill object-center' src={tempSrc} alt="/" width={500} height={300}  quality={80}/>
+                    <Image className=' object-cover bg-center bg-cover object-center' src={tempSrc} alt="/" width={1000} height={750}  quality={80}/>
                 </div>
 
             </div>
