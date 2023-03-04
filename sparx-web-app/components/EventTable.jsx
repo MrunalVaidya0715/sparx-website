@@ -27,7 +27,7 @@ const EventTable = ({event, from, to, gender, stage}) => {
                     <div className=' uppercase text-[#e6c098]'>
                         <h2>{event}</h2>
                     </div>
-                    <div className=' uppercase mt-2'>
+                    <div className=' text-gray-300 uppercase mt-2'>
                         <h4>{stage}</h4>
                     </div>
 

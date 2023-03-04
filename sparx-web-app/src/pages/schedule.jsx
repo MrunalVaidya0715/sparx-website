@@ -16,7 +16,7 @@ const schedule = () => {
             {/**Upper */}
             <div className=' flex items-end justify-between py-2 px-4 w-full '>
 
-              <div className=' p-3 flex flex-col justify-between items-center bg-gray-700/50 rounded-md'>
+              <div className='px-3 flex flex-col gap-3 justify-between items-center bg-gray-700/50 rounded-md'>
                 <div>
                   <h1 className=' text-[#C84A35]'>6</h1>
                 </div>
@@ -40,12 +40,12 @@ const schedule = () => {
           <div className=' flex items-end justify-between px-4 w-full mt-4' >
             {/** Time  */}
             <div className='  w-[50%] justify-center flex'>
-              <h3 className=' text-gray-500 font-light text-2xl'>Time</h3>
+              <h3 className=' uppercase text-gray-200 font-light text-xl'>Time</h3>
 
             </div>
             {/**Events */}
             <div className='  w-full justify-center flex '>
-              <h3 className=' text-gray-500 font-light text-2xl'>Events</h3>
+              <h3 className='uppercase text-gray-200 font-light text-xl'>Events</h3>
 
             </div>
             {/**Nothing */}
