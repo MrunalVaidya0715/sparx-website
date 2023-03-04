@@ -21,16 +21,16 @@ const schedule = () => {
                   <h1 className=' text-[#C84A35]'>6</h1>
                 </div>
                 <div>
-                  <h3 className=' lg:text-xl font-thin tracking-wider uppercase'>mon</h3>
+                  <h3 className='text-sm lg:text-xl font-thin tracking-wider uppercase'>mon</h3>
 
                 </div>
               </div>
               <div>
-                <h3 className=' lg:text-xl font-thin tracking-wider uppercase'>Venue: XIE Turf</h3>
+                <h3 className='text-sm lg:text-xl font-thin tracking-wider uppercase'>Venue: XIE Turf</h3>
 
               </div>
               <div>
-                <h3 className=' lg:text-xl font-thin tracking-wider uppercase text-[#e6c098]'>{Events.length} events</h3>
+                <h3 className='text-sm lg:text-xl font-thin tracking-wider uppercase text-[#e6c098]'>{Events.length} events</h3>
               </div>
             </div>
 
