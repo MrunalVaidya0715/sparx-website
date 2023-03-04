@@ -133,7 +133,7 @@ function Navbar() {
             </div>
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-9' >
-                <Link href='/home'>
+                <Link href='/'>
                   <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
                 </Link>
                 <Link href='/points'>
