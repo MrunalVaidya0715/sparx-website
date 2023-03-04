@@ -2,55 +2,73 @@ import React, { useState } from 'react'
 import DataTable from 'react-data-table-component'
 import { AiTwotoneTrophy } from 'react-icons/ai'
 import { AiTwotoneStar } from 'react-icons/ai'
-import {GiTrophiesShelf} from 'react-icons/gi'
+import { GiTrophiesShelf } from 'react-icons/gi'
 const points = () => {
+  
     const data = [
         {
             rank: 1,
-            class: "SE CS",
-            points: 85,
+            class: "TE IT",
+            points: 95,
+
+    
         },
         {
             rank: 2,
-            class: "SE IT",
-            points: 25,
+            class: "BE IT",
+            points: 90,
+
+    
         },
         {
             rank: 3,
-            class: "SE EXTC",
-            points: 0,
+            class: "SE CS",
+            points: 85,
+
+        
         },
         {
             rank: 4,
-            class: "TE CS",
-            points: 10,
+            class: "TE EXTC",
+            points: 75,
+    
         },
         {
             rank: 5,
-            class: "TE IT",
-            points: 95,
+            class: "SE IT",
+            points: 25,
+    
         },
         {
             rank: 6,
-            class: "TE EXTC",
-            points: 75,
+            class: "BE CS",
+            points: 20,
+            
         },
         {
             rank: 7,
-            class: "BE CS",
-            points: 20,
+            class: "TE CS",
+            points: 10,
+
+    
         },
         {
             rank: 8,
-            class: "BE IT",
-            points: 90,
+            class: "BE EXTC",
+            points: 10,
+
+    
         },
         {
             rank: 9,
-            class: "BE EXTC",
-            points: 10,
+            class: "SE EXTC",
+            points: 0,
+            
         },
     ]
+
+    
+
     const [showPoint, setShowPoint] = useState(false)
 
     const viewDetails = () => {
@@ -102,7 +120,7 @@ const points = () => {
                 <h1 className=''>
                     <span className=' tracking-wide text-red-500'>SPARX </span>
                     2023
-                    
+
                 </h1>
                 <h2 className=' font-light'>Points Table</h2>
                 <div className=' mt-4'>
@@ -113,7 +131,7 @@ const points = () => {
                 <div className=' w-full h-full flex flex-col justify-between items-center'>
                     <div className=' w-full flex items-center justify-between bg-gray-700/50 backdrop-blur-md'>
                         <div className=' w-fit pl-2'>
-                            <GiTrophiesShelf size={25}/>
+                            <GiTrophiesShelf size={25} />
                         </div>
                         <div className='  w-full p-4 ml-2 text-lg lg:text-xl'>
                             <h3 className=' text-gray-600 font-light'>Rank</h3>
@@ -142,7 +160,7 @@ const points = () => {
                                         row.rank === 1 ? <AiTwotoneTrophy /> : row.rank === 2 ? <AiTwotoneTrophy /> : row.rank === 3 ? <AiTwotoneTrophy /> : <AiTwotoneStar className=' text-gray-400' />
                                     }
                                 </div>
-                                
+
                                 <div className=' ml-10  w-full '>
                                     <p className={
                                         row.rank === 1 ? "text-[#C9B037] font-extrabold" : row.rank === 2 ? "text-[#c0c0c0] font-extrabold" : row.rank === 3 ? "text-[#AD8A56] font-extrabold" : " text-gray-400 ml-[1px]"
