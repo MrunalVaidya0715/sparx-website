@@ -79,74 +79,63 @@ export const Photos =
 [
   {
     id: 1,
-    imgSrc: '/assets/image-0.png'
+    imgSrc: '/assets/image-0.jpg'
   },
   {
     id: 2,
-    imgSrc: '/assets/image-1.png'
+    imgSrc: '/assets/image-1.jpg'
   },
   {
     id: 3,
-    imgSrc: '/assets/image-2.png'
+    imgSrc: '/assets/image-2.jpg'
   },
   {
     id: 4,
-    imgSrc: '/assets/image-3.png'
+    imgSrc: '/assets/image-3.jpg'
   },
   {
     id: 5,
-    imgSrc: '/assets/image-4.png'
+    imgSrc: '/assets/image-4.jpg'
   },
   {
     id: 6,
-    imgSrc: '/assets/image-5.png'
+    imgSrc: '/assets/image-5.jpg'
   },
   {
     id: 7,
-    imgSrc: '/assets/image-6.png'
+    imgSrc: '/assets/image-6.jpg'
   },
   {
     id: 8,
-    imgSrc: '/assets/image-7.png'
+    imgSrc: '/assets/image-7.jpg'
   },
   {
     id: 9,
-    imgSrc: '/assets/image-8.png'
+    imgSrc: '/assets/image-8.jpg'
   },
   {
     id: 10,
-    imgSrc: '/assets/image-9.png'
+    imgSrc: '/assets/image-9.jpg'
   },
   {
     id: 11,
-    imgSrc: '/assets/image-10.png'
+    imgSrc: '/assets/image-10.jpg'
   },
   {
     id: 12,
-    imgSrc: '/assets/image-11.png'
+    imgSrc: '/assets/image-11.jpg'
   },
   {
     id: 13,
-    imgSrc: '/assets/image-12.png'
+    imgSrc: '/assets/image-12n.png'
   },
   {
     id: 14,
-    imgSrc: '/assets/image-13.png'
+    imgSrc: '/assets/image-13n.png'
   },
   {
     id: 15,
-    imgSrc: '/assets/image-14.png'
+    imgSrc: '/assets/image-14n.png'
   },
-  {
-    id: 16,
-    imgSrc: '/assets/image-15.png'
-  },
-  {
-    id: 17,
-    imgSrc: '/assets/image-16.png'
-  },
-  {
-    id: 18,
-    imgSrc: '/assets/image-17.png'
-  }
+  
 ]

@@ -1,7 +1,6 @@
 import Image from 'next/image.js'
 import React from 'react'
 import { Photos } from '../src/images.js'
-import Img0 from '../public/assets/image-0.png'
 const Images = ({getImg}) => {
     return (
         <>

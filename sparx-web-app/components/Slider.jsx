@@ -5,24 +5,24 @@ import { RxDotFilled } from 'react-icons/rx';
 const Slider = () => {
     const slides = [
         {
-            url: '/assets/image-4.png',
+            url: '/assets/image-10.jpg',
             desc: "Best Class of Edition 2k22",
         },
         {
-            url: '/assets/image-19.png',
+            url: '/assets/image-m.png',
             desc: "Best Male Athlete 2k22 ",
         },
         {
-            url: '/assets/image-20.png',
+            url: '/assets/image-f.png',
             desc: "Best Female Athlete 2k22",
         },
 
         {
-            url: '/assets/image-0.png',
+            url: '/assets/image-1n.jpg',
             desc: "Admins",
         },
         {
-            url: '/assets/image-7.png',
+            url: '/assets/image-12n.png',
             desc: "Sparx Inaugration 2k23",
         },
     ];
@@ -60,7 +60,7 @@ const Slider = () => {
             <div className=' max-w-[1024px] h-[22rem] sm:h-[26rem] md:h-[28rem] lg:h-[30rem] xl:h-[32rem] px-2 w-full flex flex-col justify-center items-center relative group'>
                 <div className='w-full relative h-full rounded-lg bg-center bg-cover duration-500 flex items-center justify-center'>
                     <div className=' relative w-full h-full'>
-                        <Image className=' rounded-lg bg-center bg-cover object-cover' src={`${slides[currentIndex].url}`} alt="/" layout='fill' />
+                        <Image className=' rounded-lg bg-center bg-cover object-cover object-center' src={`${slides[currentIndex].url}`} alt="/" layout='fill' />
                     </div>
                     <div className=' absolute bottom-1 p-1 px-2 bg-black/50 rounded-md backdrop-blur-sm'>
                         <h2 className=' font-thin text-lg md:text-2xl lg:text-3xl'>{`${slides[currentIndex].desc}`}</h2>
