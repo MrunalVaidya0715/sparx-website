@@ -15,7 +15,9 @@ const home = () => {
     <div className=' flex flex-col justify-center items-center'>
 
       <HomeLanding/>
+      
       <div className=' max-w-[1240px] w-full h-fit p-4 flex flex-col justify-center items-center'>
+        
         <HomeMembers />
       </div>
 
