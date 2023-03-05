@@ -10,9 +10,9 @@ const Admins = () => {
                     return (
                         <>
                             <div className='flex flex-col gap-4 justify-between p-2 items-center w-full'>
-                                <Image className=' object-cover mx-5 object-center rounded-full' src={admin.imgSrc} alt="/" width={150} height={550} />
+                                <Image className=' object-cover mx-1 object-center rounded-full' src={admin.imgSrc} alt="/" width={150} height={550} />
                                 <div>
-                                    <p className=' text-[#e6c098] font-semibold tracking-wider'>{admin.name}</p>
+                                    <p className=' text-[#e6c098] font-semibold tracking-widest'>{admin.name}</p>
                                 </div>
 
                             </div>
