@@ -14,10 +14,10 @@ const Heads = () => {
                                 </div>
                                 <div className=' flex flex-col gap-2 items-center justify-center'>
                                     <div className=''>
-                                        <Image className=' rounded-full  object-cover object-top w-[12rem] h-[12rem]' src={head.imgSrc} alt={head.pos} width={250} height={150} />
+                                        <Image className=' border-4 border-gray-700/50 rounded-full  object-cover object-top w-[12rem] h-[12rem]' src={head.imgSrc} alt={head.pos} width={250} height={150} />
                                     </div>
                                     <div className='text-center w-full'>
-                                        <h2 className=' text-sm lg:text-lg text-yellow-200 text-center'>{head.name}</h2>
+                                    <p className=' text-[#e6c098] font-semibold '>{head.name}</p>
                                     </div>
                                 </div>
 

@@ -9,7 +9,7 @@ const HomeLanding = () => {
             </div>
             <div className=' max-w-[1240px] w-full h-fit p-4 flex flex-col justify-center items-center'>
                 <h1 className=' text-red-500 uppercase'>Sparx </h1>
-                <h3 className=' font-light text-lds tracking-wider'>March 6 Onwards</h3>
+                <h3 className=' font-light text-yellow-200 text-lg tracking-wider'>6th Match Onwards</h3>
 
 
 
