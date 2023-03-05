@@ -3,8 +3,8 @@ import Slider from './Slider'
 
 const HomeLanding = () => {
     return (
-        <div className=' w-full py-20 h-screen flex flex-col justify-between items-center'>
-            <div className=' w-full'>
+        <div className=' w-full flex flex-col justify-between items-center'>
+            <div className=' pt-20  w-full'>
                 <Slider />
             </div>
             <div className=' max-w-[1240px] w-full h-fit p-4 flex flex-col justify-center items-center'>
