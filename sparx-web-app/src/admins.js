@@ -1,57 +1,57 @@
 export const AdminsList = [
     {
         id: 1,
-        name: "Anne",
+        name: "Anne Christina",
         imgSrc: "/assets/adminss/anne.png"
     },
     {
         id: 2,
-        name: "Sanket",
+        name: "Sanket Patil",
         imgSrc: "/assets/adminss/sanket.png"
     },
     {
         id: 3,
-        name: "Vanshika",
+        name: "Vanshika Shetty",
         imgSrc: "/assets/adminss/vanshika.png"
     },
     {
         id: 4,
-        name: "Yash",
+        name: "Yash Mahajan",
         imgSrc: "/assets/adminss/yash.png"
     },
     {
         id: 5,
-        name: "leanne",
+        name: "leanne Dharmai",
         imgSrc: "/assets/adminss/leanne.png"
     },
     {
         id: 6,
-        name: "Chirac",
+        name: "Chirac Parmar",
         imgSrc: "/assets/adminss/chirac.png"
     },
     {
         id: 7,
-        name: "Falguni",
+        name: "Falguni Joshi",
         imgSrc: "/assets/adminss/falguni.png"
     },
     {
         id: 8,
-        name: "Osama",
+        name: "Osama Shaikh",
         imgSrc: "/assets/adminss/osama.png"
     },
     {
         id: 9,
-        name: "Shubham",
+        name: "Shubham Salunkhe",
         imgSrc: "/assets/adminss/shubham.png"
     },
     {
         id: 10,
-        name: "Anirudha",
+        name: "Anirudha ",
         imgSrc: "/assets/adminss/anirudha.png"
     },
     {
         id: 11,
-        name: "Sahil",
+        name: "Sahil Pawar",
         imgSrc: "/assets/adminss/sahil.png"
     },
 
