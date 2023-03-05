@@ -46,7 +46,7 @@ export const AdminsList = [
     },
     {
         id: 10,
-        name: "Anirudha ",
+        name: "Anirudha Sawant",
         imgSrc: "/assets/adminss/anirudha.png"
     },
     {
@@ -56,3 +56,25 @@ export const AdminsList = [
     },
 
 ]
+
+export const SparxHeads = [
+    {
+      id:1,
+      pos: "J. Sports Secretary",
+      name: "Chris George",
+      imgSrc:"/assets/adminss/chris.png",
+    },
+    {
+        id:2,
+        pos: "Sports Secretary",
+        name: "Gaurav Vengurlekar",
+        imgSrc:"/assets/adminss/gaurav.png",
+      },
+      {
+        id:3,
+        pos: "A. Sports Secretary",
+        name: "Atharva Ghodke",
+        imgSrc:"/assets/adminss/atharva.png",
+      },
+  
+  ]
