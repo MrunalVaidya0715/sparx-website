@@ -83,7 +83,7 @@ export const Photos =
   },
   {
     id: 2,
-    imgSrc: '/assets/image-1.jpg'
+    imgSrc: '/assets/image-1n.jpg'
   },
   {
     id: 3,
