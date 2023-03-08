@@ -154,7 +154,7 @@ function Navbar() {
 
             </div>
             <div className='flex flex-col gap-2 bottom-10 my-4 pb-12'>
-              <p className='uppercase pl-2 tracking-widest text-black font-medium'>Let's Connect</p>
+              <p className='uppercase pl-2 tracking-widest text-transparent font-bold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Let's Connect</p>
               <div>
                 <div className='flex justify-start gap-5 items-center w-full  sm:w-[85%]'>
                   <Link href="https://instagram.com/sparx.2023?igshid=YmMyMTA2M2Y=">
