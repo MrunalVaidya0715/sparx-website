@@ -109,6 +109,12 @@ const points = () => {
                 color: "white"
             }
         },
+        head:{
+            style: {
+                color: "black",
+                
+            }
+        }
 
 
     }
@@ -119,7 +125,7 @@ const points = () => {
             <div className=' p-2 flex flex-col justify-center items-center'>
                 <h1 className=''>
                     <span className=' tracking-wide text-red-500'>SPARX </span>
-                    2023
+                    2<span className=' text-red-500'>K</span>23
 
                 </h1>
                 <h2 className=' font-light'>Points Table</h2>
@@ -134,13 +140,13 @@ const points = () => {
                             <GiTrophiesShelf size={25} />
                         </div>
                         <div className='  w-full p-4 ml-2 text-lg lg:text-xl'>
-                            <h3 className=' text-gray-600 font-light'>Rank</h3>
+                            <h3 className=' text-gray-200 font-light'>Rank</h3>
                         </div>
                         <div className='  w-full p-2 text-lg lg:text-xl'>
-                            <h3 className=' text-gray-600 font-light'>Class</h3>
+                            <h3 className=' text-gray-200 font-light'>Class</h3>
                         </div>
                         <div className='  w-full p-4 text-lg lg:text-xl'>
-                            <h3 className=' text-gray-600 font-light'>Points</h3>
+                            <h3 className=' text-gray-200 font-light'>Points</h3>
                         </div>
                         {/*Entry */}
 
@@ -180,7 +186,7 @@ const points = () => {
             <div className=' mt-8'>
                 <h3 className=' text-blue-400 tracking-wider cursor-pointer' onClick={viewDetails}>
                     {
-                        showPoint ? "Hide Points Details" : " Show Points Details"
+                        showPoint ? "Hide Points Allocation Details" : " Show Points Allocation Details"
                     }
                 </h3>
             </div>

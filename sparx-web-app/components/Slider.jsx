@@ -6,7 +6,7 @@ const Slider = () => {
     const slides = [
         {
             url: '/assets/image-10.jpg',
-            desc: "Best Class of Edition 2k22",
+            desc: "Best Class of SPARX 2k22 (SE-IT)",
         },
         {
             url: '/assets/image-m.png',
@@ -23,7 +23,7 @@ const Slider = () => {
         },
         {
             url: '/assets/image-12n.png',
-            desc: "Sparx Inaugration 2k23",
+            desc: "Sparx Inauguration 2k23",
         },
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -83,7 +83,7 @@ const Slider = () => {
                             onClick={() => goToSlide(slideIndex)}
                             className='text-2xl cursor-pointer'
                         >
-                            <RxDotFilled className={`${currentIndex === slideIndex ? "text-blue-500" : ""}`} />
+                            <RxDotFilled className={`${currentIndex === slideIndex ? "text-red-500" : ""}`} />
                         </div>
                     ))}
                 </div>

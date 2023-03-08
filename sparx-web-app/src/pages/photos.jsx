@@ -33,7 +33,7 @@ const photos = () => {
                 <div className=' max-w-[1240px] w-full'>
                     <div className=' flex flex-col justify-center items-center'>
                         <h2 className='text-white font-light tracking-wide'>
-                            Gallery 2k23
+                            Gallery 2<span className=' text-red-500'>K</span>23
                         </h2>
                         <div className=' py-5 lg:py-8 w-full p-4 lg:p-0 flex justify-center items-center flex-col'>
                             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
