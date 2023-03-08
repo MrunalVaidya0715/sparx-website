@@ -21,7 +21,7 @@ const schedule = () => {
                   <h1 className=' text-[#C84A35]'>6</h1>
                 </div>
                 <div>
-                  <h3 className='text-sm lg:text-xl font-thin tracking-wider uppercase'>mon</h3>
+                  <h3 className='text-sm lg:text-xl font-bold tracking-widest uppercase'>mon</h3>
 
                 </div>
               </div>
