@@ -132,7 +132,7 @@ function Navbar() {
 
             </div>
             <div className='h-full  flex flex-col justify-center'>
-              <ul className='uppercase text-white flex flex-col justify-between gap-9' >
+              <ul className='uppercase text-white flex flex-col justify-between gap-6' >
                 <Link href='/'>
                   <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
                 </Link>
@@ -153,7 +153,7 @@ function Navbar() {
               </ul>
 
             </div>
-            <div className='flex flex-col gap-2 bottom-10 my-4'>
+            <div className='flex flex-col gap-2 bottom-10 my-4 pb-12'>
               <p className='uppercase pl-2 tracking-widest text-black font-medium'>Let's Connect</p>
               <div>
                 <div className='flex justify-start gap-5 items-center w-full  sm:w-[85%]'>
