@@ -3,7 +3,7 @@ import Images from 'components/Images.jsx'
 import Image from 'next/image'
 import { AiOutlineClose } from 'react-icons/ai'
 
-
+import img1 from ''
 const photos = () => {
     const [modal, setModal] = useState(false)
     const [tempSrc, setTempSrc] = useState('')
@@ -38,6 +38,7 @@ const photos = () => {
                         <div className=' py-5 lg:py-8 w-full p-4 lg:p-0 flex justify-center items-center flex-col'>
                             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                                 <Images getImg={getImg} />
+                                
                             </div>
 
                         </div>

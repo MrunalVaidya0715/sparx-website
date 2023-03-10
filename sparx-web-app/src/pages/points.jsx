@@ -8,60 +8,84 @@ const points = () => {
     const data = [
         {
             rank: 1,
-            class: "TE IT",
-            points: 95,
+            class: "TE-IT",
+            points: 330,
 
     
         },
         {
             rank: 2,
-            class: "BE IT",
-            points: 90,
+            class: "SE-COMPS",
+            points: 220,
 
     
         },
         {
             rank: 3,
-            class: "SE CS",
-            points: 85,
+            class: "TE-EXTC",
+            points: 130,
 
         
         },
         {
             rank: 4,
-            class: "TE EXTC",
-            points: 75,
+            class: "TE-COMPS",
+            points: 120,
     
         },
         {
             rank: 5,
-            class: "SE IT",
-            points: 25,
+            class: "SE-EXTC",
+            points: 50,
     
         },
         {
             rank: 6,
-            class: "BE CS",
-            points: 20,
+            class: "BE-EXTC",
+            points: 30,
             
         },
         {
             rank: 7,
-            class: "TE CS",
-            points: 10,
+            class: "SE-IT",
+            points: 20,
 
     
         },
         {
             rank: 8,
-            class: "BE EXTC",
-            points: 10,
+            class: "BE-COMPS",
+            points: 0,
 
     
         },
         {
             rank: 9,
-            class: "SE EXTC",
+            class: "BE-IT",
+            points: 0,
+            
+        },
+        {
+            rank: 10,
+            class: "FE-A",
+            points: 0,
+            
+        },
+        {
+            rank: 11,
+            class: "FE-B",
+            points: 0,
+            
+        },
+        {
+            rank: 12,
+            class: "FE-C",
+            points: 0,
+            
+        },
+        {
+            rank: 13,
+            class: "FE-D",
             points: 0,
             
         },
@@ -130,7 +154,7 @@ const points = () => {
                 </h1>
                 <h2 className=' font-light'>Points Table</h2>
                 <div className=' mt-4'>
-                    <p className=' text-gray-500 text-sm'>[ Last updated on 03-03-2023 ]</p>
+                    <p className=' text-gray-500 text-sm'>[ Last updated on 10-03-2023 ]</p>
                 </div>
             </div>
             <div className='  w-[90%] lg:w-[75%] max-w-[500px] overflow-hidden flex flex-col justify-center mt-2  items-center rounded-lg  border-[1px] border-gray-500'>
