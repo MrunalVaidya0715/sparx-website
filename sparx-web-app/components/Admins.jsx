@@ -32,7 +32,7 @@ const Admins = () => {
         };
       }, []);
     return (
-        <div ref={containerRef} className='flex w-full max-w-[1024px] mb-20 overflow-x-scroll scroll-smooth no-scrollbar cursor-grab '>
+        <div ref={containerRef} className='flex w-full max-w-[1024px] mb-20 overflow-x-scroll no-scrollbar cursor-grab '>
             {
                 AdminsList.map((admin) => {
                     return (
