@@ -13,7 +13,7 @@ const Admins = () => {
                 container.scrollLeft = 0;
               }
             container.scrollLeft += 1;
-          }, 50);
+          }, 25);
         }
     
         function stopScrolling() {
