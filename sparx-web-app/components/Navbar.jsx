@@ -134,19 +134,19 @@ function Navbar() {
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-6' >
                 <Link href='/'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
                 </Link>
                 <Link href='/points'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/points' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2'/>Points-Table</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/points' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2'/>Points-Table</div></li>
                 </Link>
                 <Link href='/schedule'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/schedule' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`} ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/schedule' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`} ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
                 </Link>
                 <Link href='/photos'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/photos' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><IoMdPhotos className=' mr-2'/>Gallery</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/photos' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><IoMdPhotos className=' mr-2'/>Gallery</div></li>
                 </Link>
                 <Link href='/winners'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/winners' ? "text-yellow-400":""} hover:bg-[#fe0109] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/winners' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
                 </Link>
 
 
