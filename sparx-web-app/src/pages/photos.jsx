@@ -3,7 +3,6 @@ import Images from 'components/Images.jsx'
 import Image from 'next/image'
 import { AiOutlineClose } from 'react-icons/ai'
 
-import img1 from ''
 const photos = () => {
     const [modal, setModal] = useState(false)
     const [tempSrc, setTempSrc] = useState('')
