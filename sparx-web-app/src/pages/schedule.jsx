@@ -16,9 +16,9 @@ const schedule = () => {
             {/**Upper */}
             <div className=' flex items-end justify-between py-2 px-4 w-full '>
 
-              <div className='px-3 flex flex-col gap-3 justify-between items-center bg-gray-700/50 rounded-md'>
+              <div className='px-3 py-1 flex flex-col gap-3 justify-between items-center bg-gray-700/50 rounded-md'>
                 <div>
-                  <h1 className=' text-[#C84A35]'>6</h1>
+                  <h2 className=' text-[#C84A35]'>13</h2>
                 </div>
                 <div>
                   <h3 className='text-sm lg:text-xl font-bold tracking-widest uppercase'>mon</h3>
