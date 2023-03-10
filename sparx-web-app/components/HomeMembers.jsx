@@ -17,6 +17,7 @@ const HomeMembers = () => {
           <Admins />
         </Marquee>
       </div> */}
+      <Admins/>
       
     </>
   )
