@@ -18,7 +18,7 @@ const winners = () => {
         </div>
         <div onClick={handleType} className=' cursor-pointer'>
           {
-            isIndoor? <CgToggleSquare className=' text-[#BB2649]' size={25} />: <CgToggleSquareOff className=' text-[#BB2649]' size={25} />
+            isIndoor? <CgToggleSquare className=' text-[#BB2649]' size={30} />: <CgToggleSquareOff className=' text-[#BB2649]' size={30} />
           }
         </div>
 
