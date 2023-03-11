@@ -13,7 +13,7 @@ const HomeLanding = () => {
             </div>
             <div className=' max-w-[1240px] w-full h-fit p-4 flex flex-col justify-center items-center'>
                 <h2 className=' text-red-500 uppercase'>Sparx </h2>
-                <h3 className=' font-light text-yellow-200 text-lg tracking-wider'>13th Match Onwards</h3>
+                <h3 className=' font-light text-yellow-200 text-lg tracking-wider'>13th March Onwards</h3>
                 <div className=' flex w-full justify-center items-center gap-8 mt-2'>
                 <Link href="https://instagram.com/sparx.2023?igshid=YmMyMTA2M2Y=">
                     <div className='rounded-full bg-gray-700/50 text-white border-[1px] border-gray-700 p-3 cursor-pointer ease-in duration-300'>
