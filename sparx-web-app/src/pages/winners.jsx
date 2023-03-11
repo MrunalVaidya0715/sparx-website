@@ -10,6 +10,7 @@ const winners = () => {
         <div className=' flex flex-col justify-center items-center w-full max-w-[720px]'>
           
           {/**Data loading */}
+          
           <WinnersTable/>
 
 

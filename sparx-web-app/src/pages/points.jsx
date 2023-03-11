@@ -185,15 +185,15 @@ const points = () => {
                                     ("w-full pl-2 flex items-center justify-between bg-gray-900/90 backdrop-blur-sm text-md md:text-lg ")
                             }
                             >
-                                <div className={row.rank === 1 ? "text-[#C9B037]" : row.rank === 2 ? "text-[#c0c0c0]" : row.rank === 3 ? "text-[#AD8A56]" : " text-gray-100"}>
+                                <div className={row.rank === 1 ? "text-yellow-400" : row.rank === 2 ? "text-gray-200" : row.rank === 3 ? "text-amber-700" : " text-gray-100"}>
                                     {
-                                        row.rank === 1 ? <AiTwotoneTrophy /> : row.rank === 2 ? <AiTwotoneTrophy /> : row.rank === 3 ? <AiTwotoneTrophy /> : <AiTwotoneStar className=' text-gray-400' />
+                                        row.rank === 1 ? <AiTwotoneTrophy size={25} /> : row.rank === 2 ? <AiTwotoneTrophy size={25}  /> : row.rank === 3 ? <AiTwotoneTrophy size={25}  /> : <AiTwotoneStar size={25}  className=' text-gray-400' />
                                     }
                                 </div>
 
                                 <div className=' ml-10  w-full '>
                                     <p className={
-                                        row.rank === 1 ? "text-[#C9B037] font-extrabold" : row.rank === 2 ? "text-[#c0c0c0] font-extrabold" : row.rank === 3 ? "text-[#AD8A56] font-extrabold" : " text-gray-400 ml-[1px]"
+                                        row.rank === 1 ? "text-yellow-400 font-extrabold" : row.rank === 2 ? "text-gray-200 font-extrabold" : row.rank === 3 ? " text-amber-700 font-extrabold" : " text-gray-400 ml-[1px]"
                                     }>{row.rank}</p>
                                 </div>
                                 <div className=' w-full p-4'>
