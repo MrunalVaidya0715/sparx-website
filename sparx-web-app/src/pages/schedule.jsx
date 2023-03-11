@@ -37,7 +37,7 @@ const schedule = () => {
           </div>
           {/**Lower Table */}
           {/**Entry Header */}
-          <div className=' flex items-end justify-between px-4 w-full mt-4' >
+          <div className=' flex items-end justify-between px-4 w-full mt-4 mb-2' >
             {/** Time  */}
             <div className='  w-[50%] justify-center flex'>
               <h3 className=' uppercase text-gray-200 font-light text-xl'>Time</h3>
