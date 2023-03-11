@@ -6,16 +6,18 @@ import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router';
 import Logo from '../public/assets/sparxLogo.png'
-import {AiFillHome} from 'react-icons/ai'
-import {MdLeaderboard} from 'react-icons/md'
-import {AiFillSchedule} from 'react-icons/ai'
-import {IoMdPhotos} from 'react-icons/io'
-import {AiFillTrophy} from 'react-icons/ai'
-import {SlBookOpen} from 'react-icons/sl'
+import { AiFillHome } from 'react-icons/ai'
+import { MdLeaderboard } from 'react-icons/md'
+import { AiFillSchedule } from 'react-icons/ai'
+import { IoMdPhotos } from 'react-icons/io'
+import { AiFillTrophy } from 'react-icons/ai'
+import { SlBookOpen } from 'react-icons/sl'
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [navBg, setNavBg] = useState('#030303');
   const [linkColor, setLinkColor] = useState('#9D9D9E');
+
+  const brochure = 'https://firebasestorage.googleapis.com/v0/b/fileupload-ff0a8.appspot.com/o/Sparx%20brochure%202022-23.pdf?alt=media&token=2e066469-306d-4bef-bae1-73a84fd71290'
 
   const handleNav = () => {
     setNav(!nav);
@@ -81,20 +83,20 @@ function Navbar() {
         <div>
           <ul className='hidden md:flex  text-[#9D9D9E]'>
             <Link href='/'>
-              <li onClick={() => setNav(false)} className={`ml-8 ${router.asPath === '/' ? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Home</li>
+              <li onClick={() => setNav(false)} className={`ml-8 ${router.asPath === '/' ? 'text-yellow-400' : ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Home</li>
             </Link>
             <Link href="/points">
-              <li className={`ml-8 ${router.asPath === '/points'? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Points-Table</li>
+              <li className={`ml-8 ${router.asPath === '/points' ? 'text-yellow-400' : ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Points-Table</li>
             </Link>
 
             <Link href="/schedule">
-              <li className={`ml-8 ${router.asPath === '/schedule'? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Schedule</li>
+              <li className={`ml-8 ${router.asPath === '/schedule' ? 'text-yellow-400' : ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Schedule</li>
             </Link>
             <Link href="/photos">
-              <li className={`ml-8 ${router.asPath === '/photos'? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Gallery</li>
+              <li className={`ml-8 ${router.asPath === '/photos' ? 'text-yellow-400' : ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Gallery</li>
             </Link>
             <Link href="/winners">
-              <li className={`ml-8 ${router.asPath === '/winners'? 'text-yellow-400': ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Winners</li>
+              <li className={`ml-8 ${router.asPath === '/winners' ? 'text-yellow-400' : ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Winners</li>
             </Link>
 
 
@@ -134,19 +136,19 @@ function Navbar() {
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-6' >
                 <Link href='/'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillHome className=' mr-2'/>Home</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillHome className=' mr-2' />Home</div></li>
                 </Link>
                 <Link href='/points'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/points' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2'/>Points-Table</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/points' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2' />Points-Table</div></li>
                 </Link>
                 <Link href='/schedule'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/schedule' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`} ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2'/>Schedule</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/schedule' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`} ><div className=' flex items-center justify-start'><AiFillSchedule className=' mr-2' />Schedule</div></li>
                 </Link>
                 <Link href='/photos'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/photos' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><IoMdPhotos className=' mr-2'/>Gallery</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/photos' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><IoMdPhotos className=' mr-2' />Gallery</div></li>
                 </Link>
                 <Link href='/winners'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/winners' ? "text-yellow-400":""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2'/>Winners</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/winners' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2' />Winners</div></li>
                 </Link>
 
 
@@ -158,14 +160,16 @@ function Navbar() {
               <div>
                 <div className='flex justify-start gap-5 items-center w-full  sm:w-[85%]'>
                   <Link href="https://instagram.com/sparx.2023?igshid=YmMyMTA2M2Y=">
-                  <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
-                    <FaInstagram size={20} className="hover:scale-150 transition-all ease-in duration-150" />
-                  </div>
+                    <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
+                      <FaInstagram size={20} className="hover:scale-150 transition-all ease-in duration-150" />
+                    </div>
                   </Link>
-                  
-                  <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
-                    <SlBookOpen size={20} className="hover:scale-150 transition-all ease-in duration-150" />
-                  </div>
+
+                  <Link href={brochure} download>
+                    <div className='rounded-full bg-white text-black p-4 cursor-pointer ease-in duration-300'>
+                      <SlBookOpen size={20} className="hover:scale-150 transition-all ease-in duration-150" />
+                    </div>
+                  </Link>
 
 
                 </div>
