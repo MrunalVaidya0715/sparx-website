@@ -1,14 +1,9 @@
 import React, { useState } from 'react'
-import { MdExpandMore, MdExpandLess } from 'react-icons/md'
 import { AiTwotoneTrophy } from 'react-icons/ai'
 import { winnersList } from '../src/winnersData.js'
 const WinnersTable = () => {
 
 
-    const [view, setView] = useState(true)
-    const handleView = () => {
-        setView(prev => !prev)
-    }
 
 
     return (
@@ -29,17 +24,12 @@ const WinnersTable = () => {
                                             <p className='text-[#e6c098] text-xl font-bold'>{item.sports}</p>
                                         </div>
                                     </div>
-                                    {/**hide/View */}
-                                    {/* <div onClick={handleView} className=' flex w-[35%] justify-end items-center cursor-pointer'>
-                                <p className=' text-blue-500 text-sm'>{view ? 'Hide' : 'Show'} Winners</p>
-                                {view ? <MdExpandLess /> : <MdExpandMore />}
-
-                            </div> */}
+                                    
 
                                 </div>
 
                                 {/**Winners */}
-                                {/**Loop the winners */}
+                               
                                 {
                                     item.winners.map((winner) => {
                                         return (
@@ -47,7 +37,8 @@ const WinnersTable = () => {
                                                 <div className='flex flex-col w-full border-[1px] border-gray-700'>
                                                     <div className=' flex justify-between gap-2 bg-gray-800/90 items-center w-full'>
                                                         {/**Ranking */}
-                                                        <div className={ winner.rank === 1? 'flex w-[25%] text-yellow-400 items-center justify-center gap-2' : winner.rank === 2 ? 'flex w-[25%] text-gray-200 items-center justify-center gap-2': 'flex text-amber-700 w-[25%] items-center justify-center gap-2'}>
+                                                        
+                                                        <div className={`flex w-[25%] ${winner.rank === 1? 'text-yellow-400' : winner.rank===2? 'text-gray-200':'text-amber-700'} items-center justify-center gap-2`}>
                                                             <AiTwotoneTrophy size={25} />
                                                             <p className=' text-md font-bold'>{winner.rank}</p>
                                                         </div>
