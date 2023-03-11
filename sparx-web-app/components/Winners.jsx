@@ -14,9 +14,7 @@ const Winners = () => {
   return (
     <div className=' flex flex-col justify-between mx-4 mb-8 w-full'>
       {/**SportsName */}
-
       <div className=' flex justify-between  w-full '>
-
         <div className=' flex items-baseline justify-start gap-2 px-4 w-full mb-2' >
           <div className=' flex  justify-start items-center'>
             <h3 className='text-white'>1.</h3>
@@ -27,7 +25,7 @@ const Winners = () => {
 
         </div>
         <div onClick={handleView} className=' flex w-full justify-end pr-4 items-center cursor-pointer'>
-          <p className='text-blue-500 font-thin'>{view ? 'hide' : 'view'} winners</p>{
+          <p className='text-blue-500 font-thin'>{view? 'hide': 'view'} winners</p>{
             view ? <MdKeyboardArrowUp className='text-blue-500' /> : <MdKeyboardArrowDown className='text-blue-500' />
           }
         </div>
@@ -52,31 +50,13 @@ const Winners = () => {
 
 
       </div> */}
-      <div className=' flex items-end justify-between px-4 w-full mt-4 ' >
 
-        <div className='  w-[15%] justify-center flex bg-gray-700/40 rounded-tl-md border-t-[1px] border-l-[1px] border-gray-700'>
-          <h3 className=' uppercase text-sm md:text-lg text-gray-200 font-light text-md'>Rank</h3>
-
-        </div>
-
-        <div className='  w-[70%] justify-center flex bg-gray-700/40 border-t-[1px] border-gray-700 '>
-          <h3 className='uppercase text-sm md:text-lg text-gray-200 font-light text-md'>Participants</h3>
-
-        </div>
-
-        <div className='  w-[20%] justify-center flex bg-gray-700/40 rounded-tr-md  pr-1 border-t-[1px] border-r-[1px] border-gray-700'>
-          <h3 className='uppercase text-sm md:text-lg text-gray-200 font-light text-md'>Points</h3>
-
-        </div>
-
-
-      </div>
       {/**Table */}
       <div className={view ? ' flex items-end justify-between px-4 w-full mb-2' : 'hidden'} >
 
 
         {/**Rank */}
-        <div className='flex items-center flex-col justify-between bg-gray-900/50 rounded-bl-md  border-y-[1px] border-l-[1px] border-gray-700 w-[15%] h-[10rem]'>
+        <div className='flex items-center flex-col justify-between bg-gray-900/50 rounded-l-md border-y-[1px] border-l-[1px] border-gray-700 w-[20%] h-[10rem]'>
           {/**from */}
           <div className='py-2'>
             <h3 className=' font-thin tracking-wider uppercase text-gray-200'>1</h3>
@@ -127,19 +107,19 @@ const Winners = () => {
         </div> */}
 
         {/**Rank */}
-        <div className='flex items-center px-2 flex-col justify-between bg-gray-900/50 border-y-[1px] border-r-[1px] rounded-br-md border-gray-700 w-[20%] h-[10rem]'>
+        <div className='flex items-center px-2 flex-col justify-between bg-gray-900/50 rounded-r-md border-y-[1px] border-r-[1px] border-gray-700 w-[30%] h-[10rem]'>
 
           <div className='py-2'>
-            <h3 className=' font-bold text-lg tracking-wider text-gray-200'><span className='text-[#e6c098]'>50</span></h3>
+            <h3 className=' font-bold text-lg tracking-wider text-gray-200'><span className='text-[#e6c098]'>50</span><span className=' font-thin text-sm text-gray-500'>pts</span></h3>
 
           </div>
           <div>
-            <h3 className=' font-bold text-lg tracking-wider text-gray-200'><span className='text-[#e6c098]'>30</span></h3>
+            <h3 className=' font-bold text-lg tracking-wider text-gray-200'><span className='text-[#e6c098]'>30</span><span className=' font-thin text-sm text-gray-500'>pts</span></h3>
 
           </div>
 
           <div className='py-2'>
-            <h3 className=' font-bold text-lg tracking-wider text-gray-200'><span className='text-[#e6c098]'>20</span></h3>
+            <h3 className=' font-bold text-lg tracking-wider text-gray-200'><span className='text-[#e6c098]'>20</span><span className=' font-thin text-sm text-gray-500'>pts</span></h3>
           </div>
         </div>
 

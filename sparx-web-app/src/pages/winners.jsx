@@ -1,4 +1,5 @@
 import Winners from 'components/Winners'
+import WinnersTable from 'components/WinnersTable'
 import React from 'react'
 
 const winners = () => {
@@ -9,20 +10,7 @@ const winners = () => {
         <div className=' flex flex-col justify-center items-center w-full max-w-[720px]'>
           
           {/**Data loading */}
-          <Winners />
-          <Winners />
-          <Winners />
-          <Winners />
-          <Winners />
-          <Winners />
-          <Winners />
-          <Winners />
-          <Winners />
-          <Winners />
-          <Winners />
-          <Winners />
-
-          <Winners />
+          <WinnersTable/>
 
 
         </div>
