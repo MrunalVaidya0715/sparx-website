@@ -1,3 +1,4 @@
+import Footer from "components/Footer";
 import Slider from "components/Slider";
 import Homey from './home'
 
@@ -11,6 +12,7 @@ export default function Home() {
         <button>Hello</button>
       </div> */}
       <Homey/>
+      
       
       
     </>

@@ -145,7 +145,7 @@ const points = () => {
 
 
     return (
-        <div className='py-20  relative  flex flex-col justify-center items-center'>
+        <div className='py-20 flex flex-col justify-center items-center'>
             <div className=' p-2 flex flex-col justify-center items-center'>
                 <h1 className=''>
                     <span className=' tracking-wide text-red-500'>SPARX </span>
