@@ -1,6 +1,7 @@
 import { CgToggleSquare, CgToggleSquareOff } from 'react-icons/cg'
 import WinnersTable from 'components/WinnersTable'
 import React, { useState } from 'react'
+import Winners from 'components/Winners'
 
 const winners = () => {
   const [isIndoor, setIsIndoor] = useState(true)
@@ -31,7 +32,9 @@ const winners = () => {
 
           {/**Data loading */}
 
-          <WinnersTable />
+          {
+            isIndoor? <WinnersTable /> : <Winners/>
+          }
 
 
         </div>
