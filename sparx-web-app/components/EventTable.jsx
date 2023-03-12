@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EventTable = ({ event, from, to, gender, stage }) => {
+const EventTable = ({ event, from, to, gender, stage, comp }) => {
     return (
         <>
             <div className=' flex items-end justify-between px-0 w-full mb-2' >
@@ -31,8 +31,11 @@ const EventTable = ({ event, from, to, gender, stage }) => {
                     <div className=' uppercase text-[#e6c098]'>
                         <h2>{event}</h2>
                     </div>
-                    <div className=' text-gray-300 uppercase mt-2'>
+                    <div className=' text-gray-300 uppercase'>
                         <h4>{stage}</h4>
+                    </div>
+                    <div className=' text-yellow-300 uppercase mt-2'>
+                        <h4>{comp}</h4>
                     </div>
 
 

@@ -61,7 +61,7 @@ const schedule = () => {
             Events.map((event, index) => {
               return (
                 <>
-                  <EventTable event={event.event} from={event.from} to={event.to} stage={event.stage} gender={event.gender} />
+                  <EventTable event={event.event} from={event.from} to={event.to} stage={event.stage} gender={event.gender} comp={event?.comp} />
                 </>
               )
             })
