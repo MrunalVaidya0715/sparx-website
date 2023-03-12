@@ -7,7 +7,7 @@ const Footer = () => {
         <div className=' text-gray-600 flex flex-col w-full justify-center items-center mt-20 bg-gray-900/90 p-4'>
             <p className=' text-gray-500'>Quick Links</p>
             <div className='flex  justify-center items-center mb-4'>
-                <div className=' flex w-full gap-4  md:gap-8 justify-start'>
+                <div className=' flex flex-wrap w-full gap-4  md:gap-8 justify-start items-center'>
                     <Link href='/'>
                         <p className=' underline underline-offset-2 hover:opacity-[0.4] uppercase text-gray-500'>Home</p>
                     </Link>
