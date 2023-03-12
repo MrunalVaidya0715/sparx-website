@@ -16,7 +16,7 @@ function Navbar() {
   const [nav, setNav] = useState(false);
   const [navBg, setNavBg] = useState('#030303');
   const [linkColor, setLinkColor] = useState('#9D9D9E');
-  
+
 
   const brochure = 'https://firebasestorage.googleapis.com/v0/b/fileupload-ff0a8.appspot.com/o/Sparx%20brochure%202022-23.pdf?alt=media&token=2e066469-306d-4bef-bae1-73a84fd71290'
 
@@ -80,7 +80,9 @@ function Navbar() {
   return (
     <div className={shadow ? ('fixed backdrop-blur-sm bg-[#030303]/90 w-full h-20 z-[100]') : ('fixed bg-[#030303] w-full h-20 z-[100]')}>
       <div className='flex justify-between items-center w-full h-full  px-4 2xl:px-16'>
-        <Image src={Logo} alt="/" width='75' height='50' />
+        <Link href='/'>
+          <Image src={Logo} alt="/" width='75' height='50' />
+        </Link>
         <div>
           <ul className='hidden md:flex  text-[#9D9D9E]'>
             <Link href='/'>
