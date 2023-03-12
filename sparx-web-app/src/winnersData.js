@@ -10,7 +10,7 @@ export const winnersList = [
             },
             {
                 rank: 2,
-                name: "Sumeet Thakur",
+                name: "Sumeet Sharma",
                 class: "BE-EXTC"
             },
             {
@@ -28,7 +28,7 @@ export const winnersList = [
         winners: [
             {
                 rank: 1,
-                name: "Anirudh Sawant",
+                name: "Anirudha Sawant",
                 class: "TE-COMPS"
             },
             {
@@ -79,12 +79,12 @@ export const winnersList = [
             },
             {
                 rank: 2,
-                name: "Sahil ",
+                name: "Sahil & Mandar ",
                 class: "TE-EXTC"
             },
             {
                 rank: 3,
-                name: "Melroy",
+                name: "Melroy & Shripad",
                 class: "TE-EXTC"
             },
 
@@ -107,7 +107,7 @@ export const winnersList = [
             },
             {
                 rank: 3,
-                name: "Sam",
+                name: "Sam Saji",
                 class: "SE-COMPS"
             },
 
@@ -153,7 +153,7 @@ export const winnersList = [
             },
             {
                 rank: 3,
-                name: "Pratham",
+                name: "Pratham & Vivek",
                 class: "SE-IT"
             },
 
@@ -199,9 +199,28 @@ export const winnersList = [
             },
             {
                 rank: 3,
-                name: "Pooja",
+                name: "Pooja Raut",
                 class: "SE-COMPS"
             },
+
+        ]
+
+    },
+    {
+        id: 10,
+        sports: "Arm Wrestling (Boys)",
+        winners: [
+            {
+                rank: 1,
+                name: "Shahanawaz Shaikh",
+                class: "SE-EXTC"
+            },
+            {
+                rank: 2,
+                name: "Pratham Singh",
+                class: "SE-IT"
+            },
+            
 
         ]
 
