@@ -5,6 +5,7 @@ import HomeMembers from 'components/HomeMembers'
 import PointsTable from 'components/PointsTable'
 import Slider from 'components/Slider'
 import SlideSwiper from 'components/SlideSwiper'
+import Sponsors from 'components/Sponsors'
 import Table from 'components/Table'
 import Image from 'next/image'
 import React from 'react'
@@ -19,6 +20,7 @@ const home = () => {
       <div className=' max-w-[1240px] w-full h-fit p-4 flex flex-col justify-center items-center'>
         <p className=' mt-12 mb-6 text-3xl md:text-6xl font-bold text-[#e6c098] tracking-wider uppercase'>Team Sparx 2k23</p>
         <HomeMembers />
+        <Sponsors/>
       </div>
 
 
