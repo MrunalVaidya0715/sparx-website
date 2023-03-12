@@ -16,6 +16,7 @@ function Navbar() {
   const [nav, setNav] = useState(false);
   const [navBg, setNavBg] = useState('#030303');
   const [linkColor, setLinkColor] = useState('#9D9D9E');
+  
 
   const brochure = 'https://firebasestorage.googleapis.com/v0/b/fileupload-ff0a8.appspot.com/o/Sparx%20brochure%202022-23.pdf?alt=media&token=2e066469-306d-4bef-bae1-73a84fd71290'
 
@@ -136,7 +137,7 @@ function Navbar() {
             <div className='h-full  flex flex-col justify-center'>
               <ul className='uppercase text-white flex flex-col justify-between gap-6' >
                 <Link href='/'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillHome className=' mr-2' />Home</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/' || router.asPath === '/home' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillHome className=' mr-2' />Home</div></li>
                 </Link>
                 <Link href='/points'>
                   <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/points' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><MdLeaderboard className=' mr-2' />Points-Table</div></li>
