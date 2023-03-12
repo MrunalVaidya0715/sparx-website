@@ -161,13 +161,13 @@ const points = () => {
                 <div className=' w-full h-full flex flex-col justify-between items-center'>
                     <div className=' w-full flex items-center justify-between bg-gray-700/50'>
 
-                        <div className='flex justify-center w-full p-4  text-lg lg:text-xl'>
+                        <div className='flex justify-center w-[50%] p-4  text-lg lg:text-xl'>
                             <h3 className=' text-gray-200 font-light'>Rank</h3>
                         </div>
                         <div className=' flex justify-center w-full p-4 text-lg lg:text-xl'>
                             <h3 className=' text-gray-200 font-light'>Class</h3>
                         </div>
-                        <div className=' flex justify-center w-full p-4 text-lg lg:text-xl'>
+                        <div className=' flex justify-center w-[40%] p-4 text-lg lg:text-xl'>
                             <h3 className=' text-gray-200 font-light'>Points</h3>
                         </div>
                         {/*Entry */}
@@ -196,10 +196,10 @@ const points = () => {
                                         }>{row.rank}</p>
                                     </div>
                                 </div>
-                                <div className=' w-full flex justify-start p-4'>
+                                <div className=' w-full flex justify-center p-4'>
                                     <p className=' text-gray-400 font-medium'>{row.class}</p>
                                 </div>
-                                <div className=' w-[40%] flex items justify-start p-4'>
+                                <div className=' w-[40%] flex items justify-center p-4'>
                                     <h3 className=' text-[#e6c098]'>{row.points}</h3>
                                 </div>
                             </div>
