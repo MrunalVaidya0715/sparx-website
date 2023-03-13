@@ -3,13 +3,18 @@ import DataTable from 'react-data-table-component'
 import { AiTwotoneTrophy } from 'react-icons/ai'
 import { AiTwotoneStar } from 'react-icons/ai'
 import { GiTrophiesShelf } from 'react-icons/gi'
+import { MdArrowDownward, MdArrowUpward } from 'react-icons/md'
+import { BsDashLg } from 'react-icons/bs'
+
 const points = () => {
 
     const data = [
         {
+
             rank: 1,
             class: "TE-IT",
-            points: 330,
+            points: 360,
+            pos: 0,
 
 
         },
@@ -17,6 +22,7 @@ const points = () => {
             rank: 2,
             class: "SE-COMPS",
             points: 220,
+            pos: 0,
 
 
         },
@@ -24,6 +30,7 @@ const points = () => {
             rank: 3,
             class: "TE-EXTC",
             points: 130,
+            pos: 0,
 
 
         },
@@ -31,62 +38,74 @@ const points = () => {
             rank: 4,
             class: "TE-COMPS",
             points: 120,
+            pos: 0,
 
         },
         {
             rank: 5,
-            class: "SE-EXTC",
-            points: 50,
+            class: "BE-EXTC",
+            points: 60,
+            pos: 1,
 
         },
         {
             rank: 6,
-            class: "BE-EXTC",
-            points: 30,
+            class: "SE-EXTC",
+            points: 50,
+            pos: -1,
 
         },
+
+
         {
             rank: 7,
-            class: "SE-IT",
-            points: 20,
+            class: "BE-COMPS",
+            points: 30,
+            pos: 1,
 
 
         },
         {
             rank: 8,
-            class: "BE-COMPS",
-            points: 0,
-
+            class: "BE-IT",
+            points: 30,
+            pos: 1,
 
         },
         {
             rank: 9,
-            class: "BE-IT",
-            points: 0,
+            class: "SE-IT",
+            points: 20,
+            pos: -2,
+
 
         },
         {
             rank: 10,
             class: "FE-A",
-            points: 0,
+            points: 20,
+            pos: 0,
 
         },
         {
             rank: 11,
             class: "FE-B",
             points: 0,
+            pos: 0,
 
         },
         {
             rank: 12,
             class: "FE-C",
             points: 0,
+            pos: 0,
 
         },
         {
             rank: 13,
             class: "FE-D",
             points: 0,
+            pos: 0,
 
         },
     ]
@@ -154,7 +173,7 @@ const points = () => {
                 </h1>
                 <h2 className=' font-light'>Points Table</h2>
                 <div className=' mt-4'>
-                    <p className=' text-gray-500 text-sm'>[ Last updated on 10-03-2023 ]</p>
+                    <p className=' text-gray-500 text-sm'>[ Last updated on 13-03-2023 ]</p>
                 </div>
             </div>
             <div className='  w-[90%] lg:w-[75%] max-w-[500px] overflow-hidden flex flex-col justify-center mt-2  items-center rounded-lg  border-[1px] border-gray-500'>
@@ -184,6 +203,25 @@ const points = () => {
                             }
                             >
                                 <div className=' p-4 flex w-[50%] items-center justify-center'>
+                                    <div className=' flex mr-2 justify-center items-center gap-1 text-blue-500'>
+                                        {
+                                            row.pos > 0 ? (
+                                                <div className=' text-yellow-300 flex flex-col items-center justify-center ' >
+                                                    <MdArrowUpward/>
+                                                    <p className='text-sm'>{row.pos}</p>
+                                                </div>
+
+                                            ) : row.pos < 0 ? (
+                                                <div className=' text-red-500 flex flex-col items-center justify-center'>
+                                                    <MdArrowDownward />
+                                                    <p className='text-sm'>{row.pos}</p>
+                                                </div>
+                                            ) : (
+                                                <div><BsDashLg /></div>
+
+                                            )
+                                        }
+                                    </div>
                                     <div className={row.rank === 1 ? "text-yellow-400" : row.rank === 2 ? "text-gray-200" : row.rank === 3 ? "text-amber-700" : " text-gray-100"}>
                                         {
                                             row.rank === 1 ? <AiTwotoneTrophy size={25} /> : row.rank === 2 ? <AiTwotoneTrophy size={25} /> : row.rank === 3 ? <AiTwotoneTrophy size={25} /> : <AiTwotoneStar size={25} className=' text-gray-400' />
