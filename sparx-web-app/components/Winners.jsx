@@ -7,12 +7,12 @@ const Winners = () => {
 
 
   return (
-    <>
+    <div className=' flex flex-col justify-start items-center h-screen w-full'>
       {
         winnersOutdoor.map((item) => {
           return (
             <>
-              <div className=' flex flex-col items-center justify-between w-full mb-4 px-4 mt-6'>
+              <div className='flex flex-col items-center justify-between w-full mb-4 px-4 mt-6'>
                 {/**SportsName */}
                 <div className=' flex items-baseline justify-between w-full'>
                   {/**No, Sports */}
@@ -76,7 +76,7 @@ const Winners = () => {
           )
         })
       }
-    </>
+    </div>
   )
 }
 
