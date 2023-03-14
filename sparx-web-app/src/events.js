@@ -1,40 +1,40 @@
 export const Events = [
    {
     id: 1,
-    from: "3:30 pm",
-    to: "4:30 pm",
+    from: "TBA",
+    to: "TBA",
     gender: "Boys",
     event: "Kabaddi",
-    stage: "Semis & Finals",
+    stage: "Finals",
 
     
 
    },
    {
     id: 2,
-    from: "3:45 pm",
-    to: "4:30 pm",
-    gender: "Girls",
+    from: "TBA",
+    to: "TBA",
+    gender: "Boys",
     event: "Tug of war",
-    stage: "Semis & Finals",
+    stage: "Round 2",
 
    },
    {
     id: 3,
-    from: "4:30 pm",
-    to: "5:30 pm",
-    gender: "Boys",
-    event: "Tug of War",
+    from: "TBA",
+    to: "TBA",
+    gender: "Girls",
+    event: "Kabaddi",
     stage: "Round 1",
 
    },
    {
       id: 4,
-      from: "5:00 pm",
-      to: "6:00 pm",
-      gender: "Girls",
-      event: "Kabaddi",
-      stage: "Round 2 & Finals",
+      from: "TBA",
+      to: "TBA",
+      gender: "Boys",
+      event: "Football",
+      stage: "Round 1",
   
       
   
