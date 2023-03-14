@@ -5,7 +5,7 @@ const schedule = () => {
   return (
     <div className='py-20  flex flex-col justify-center items-center px-4 '>
       <h2 className=' tracking-wider mb-4 font-light '>Schedule</h2>
-      <div className=' max-w-[1240px] w-full h-screen flex items-start justify-center'>
+      <div className=' max-w-[1240px] w-full  flex items-start justify-center'>
 
         <div className=' flex flex-col justify-center items-center w-full max-w-[720px]'>
 
