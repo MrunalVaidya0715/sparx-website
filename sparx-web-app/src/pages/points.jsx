@@ -3,7 +3,7 @@ import DataTable from 'react-data-table-component'
 import { AiTwotoneTrophy } from 'react-icons/ai'
 import { AiTwotoneStar } from 'react-icons/ai'
 import { GiTrophiesShelf } from 'react-icons/gi'
-import { MdArrowDownward, MdArrowUpward } from 'react-icons/md'
+import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
 import { BsDashLg } from 'react-icons/bs'
 
 const points = () => {
@@ -13,7 +13,7 @@ const points = () => {
 
             rank: 1,
             class: "TE-IT",
-            points: 360,
+            points: 420,
             pos: 0,
 
 
@@ -28,72 +28,72 @@ const points = () => {
         },
         {
             rank: 3,
-            class: "TE-EXTC",
-            points: 130,
-            pos: 0,
-
+            class: "TE-COMPS",
+            points: 140,
+            pos: 1,
 
         },
         {
             rank: 4,
-            class: "TE-COMPS",
-            points: 120,
+            class: "TE-EXTC",
+            points: 130,
+            pos: -1,
+
+
+        },
+        
+        {
+            rank: 5,
+            class: "BE-EXTC",
+            points: 90,
             pos: 0,
 
         },
         {
-            rank: 5,
-            class: "BE-EXTC",
+            rank: 6,
+            class: "BE-COMPS",
+            points: 60,
+            pos: 1,
+
+
+        },
+        {
+            rank: 7,
+            class: "BE-IT",
             points: 60,
             pos: 1,
 
         },
         {
-            rank: 6,
+            rank: 8,
             class: "SE-EXTC",
             points: 50,
-            pos: -1,
-
-        },
-
-
-        {
-            rank: 7,
-            class: "BE-COMPS",
-            points: 30,
-            pos: 1,
-
-
-        },
-        {
-            rank: 8,
-            class: "BE-IT",
-            points: 30,
-            pos: 1,
+            pos: -2,
 
         },
         {
             rank: 9,
-            class: "SE-IT",
-            points: 20,
-            pos: -2,
-
+            class: "FE-B",
+            points: 50,
+            pos: 2,
 
         },
         {
             rank: 10,
-            class: "FE-A",
+            class: "SE-IT",
             points: 20,
-            pos: 0,
+            pos: -1,
+
 
         },
         {
             rank: 11,
-            class: "FE-B",
-            points: 0,
-            pos: 0,
+            class: "FE-A",
+            points: 20,
+            pos: -1,
 
         },
+        
         {
             rank: 12,
             class: "FE-C",
@@ -175,7 +175,7 @@ const points = () => {
                 </h1>
                 <h2 className=' font-light'>Points Table</h2>
                 <div className=' mt-4'>
-                    <p className=' text-gray-500 text-sm'>[ Last updated on 13-03-2023 ]</p>
+                    <p className=' text-gray-500 text-sm'>[ Last updated on 14-03-2023 ]</p>
                 </div>
             </div>
             <div className='  w-[90%] lg:w-[75%] max-w-[500px] overflow-hidden flex flex-col justify-center mt-2  items-center rounded-lg  border-[1px] border-gray-500'>
@@ -209,17 +209,17 @@ const points = () => {
                                         {
                                             row.pos > 0 ? (
                                                 <div className=' text-yellow-300 flex flex-col items-center justify-center ' >
-                                                    <MdArrowUpward/>
+                                                    <IoIosArrowUp size={20}/>
                                                     <p className='text-sm'>{row.pos}</p>
                                                 </div>
 
                                             ) : row.pos < 0 ? (
                                                 <div className=' text-red-500 flex flex-col items-center justify-center'>
-                                                    <MdArrowDownward />
+                                                    <IoIosArrowDown size={20}/>
                                                     <p className='text-sm'>{row.pos}</p>
                                                 </div>
                                             ) : (
-                                                <div><BsDashLg /></div>
+                                                <div><BsDashLg size={15} /></div>
 
                                             )
                                         }
