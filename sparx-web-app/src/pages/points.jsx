@@ -13,7 +13,7 @@ const points = () => {
 
             rank: 1,
             class: "TE-IT",
-            points: 420,
+            points: 450,
             pos: 0,
 
 
@@ -21,7 +21,7 @@ const points = () => {
         {
             rank: 2,
             class: "SE-COMPS",
-            points: 220,
+            points: 240,
             pos: 0,
 
 
@@ -30,14 +30,14 @@ const points = () => {
             rank: 3,
             class: "TE-COMPS",
             points: 140,
-            pos: 1,
+            pos: 0,
 
         },
         {
             rank: 4,
             class: "TE-EXTC",
             points: 130,
-            pos: -1,
+            pos: 0,
 
 
         },
@@ -53,7 +53,7 @@ const points = () => {
             rank: 6,
             class: "BE-COMPS",
             points: 60,
-            pos: 1,
+            pos: 0,
 
 
         },
@@ -61,53 +61,52 @@ const points = () => {
             rank: 7,
             class: "BE-IT",
             points: 60,
-            pos: 1,
+            pos: 0,
 
         },
         {
             rank: 8,
             class: "SE-EXTC",
             points: 50,
-            pos: -2,
+            pos: 0,
 
         },
         {
             rank: 9,
             class: "FE-B",
             points: 50,
-            pos: 2,
+            pos: 0,
 
         },
         {
             rank: 10,
-            class: "SE-IT",
-            points: 20,
-            pos: -1,
-
+            class: "FE-A",
+            points: 40,
+            pos: 1,
 
         },
         {
             rank: 11,
-            class: "FE-A",
+            class: "FE-D",
+            points: 30,
+            pos: 2,
+
+        },
+        {
+            rank: 12,
+            class: "SE-IT",
             points: 20,
+            pos: -2,
+        },
+        
+        {
+            rank: 13,
+            class: "FE-C",
+            points: 0,
             pos: -1,
 
         },
         
-        {
-            rank: 12,
-            class: "FE-C",
-            points: 0,
-            pos: 0,
-
-        },
-        {
-            rank: 13,
-            class: "FE-D",
-            points: 0,
-            pos: 0,
-
-        },
     ]
      
     
@@ -173,9 +172,9 @@ const points = () => {
                     2<span className=' text-red-500'>K</span>23
 
                 </h1>
-                <h2 className=' font-light'>Points Table</h2>
+                <h2 className=' font-light'>Points Table (Day 3)</h2>
                 <div className=' mt-4'>
-                    <p className=' text-gray-500 text-sm'>[ Last updated on 14-03-2023 ]</p>
+                    <p className=' text-gray-500 text-sm'>[ Last updated on 15-03-2023 ]</p>
                 </div>
             </div>
             <div className='  w-[90%] lg:w-[75%] max-w-[500px] overflow-hidden flex flex-col justify-center mt-2  items-center rounded-lg  border-[1px] border-gray-500'>

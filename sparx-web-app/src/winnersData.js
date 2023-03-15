@@ -143,14 +143,15 @@ export const winnersList = [
         winners: [
             {
                 rank: 1,
-                name: "Krishna & Sarvesh",
-                class: "TE-IT"
-            },
-            {
-                rank: 2,
                 name: "Atharva & Sam",
                 class: "SE-COMPS"
             },
+            {
+                rank: 2,
+                name: "Krishna & Sarvesh",
+                class: "TE-IT"
+            },
+            
             {
                 rank: 3,
                 name: "Pratham & Vivek",
