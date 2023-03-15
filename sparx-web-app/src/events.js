@@ -4,7 +4,7 @@ export const Events = [
     from: "TBA",
     to: "TBA",
     gender: "Boys",
-    event: "Kabaddi",
+    event: "Tug of War",
     stage: "Finals",
 
     
@@ -14,31 +14,21 @@ export const Events = [
     id: 2,
     from: "TBA",
     to: "TBA",
-    gender: "Boys",
-    event: "Tug of war",
-    stage: "Round 2",
+    gender: "Girls",
+    event: "Rink Football",
+    stage: "Round 1",
 
    },
    {
     id: 3,
     from: "TBA",
     to: "TBA",
-    gender: "Girls",
-    event: "Kabaddi",
+    gender: "Boys",
+    event: "Open Football",
     stage: "Round 1",
 
    },
-   {
-      id: 4,
-      from: "TBA",
-      to: "TBA",
-      gender: "Boys",
-      event: "Football",
-      stage: "Round 1",
-  
-      
-  
-     },
+   
    
     
 ]
