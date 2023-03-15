@@ -26,6 +26,24 @@ export const Events = [
     gender: "Boys",
     event: "Open Football",
     stage: "Round 1",
+    fixtures : [
+      {
+         m: 1,
+         t1: "BE-IT",
+         t2: "FE-C"
+      },
+      {
+         m:2,
+         t1: "SE-IT",
+         t2:"FE-A"
+      },
+      {
+         m:3,
+         t1: "FE-B",
+         t2: "FE-D"
+      }
+    ]
+    
 
    },
    

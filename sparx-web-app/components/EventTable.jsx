@@ -1,12 +1,12 @@
 import React from 'react'
 
-const EventTable = ({ event, from, to, gender, stage, comp }) => {
+const EventTable = ({ event, from, to, gender, stage, fixtures }) => {
     return (
         <>
             <div className=' flex items-end justify-between px-0 w-full mb-2' >
 
                 {/**TimeSlot */}
-                <div className='flex items-center flex-col justify-between bg-gray-900/50 rounded-l-md border-y-[1px] border-l-[1px] border-gray-700 w-[50%] h-[10rem]'>
+                <div className='flex items-center flex-col justify-between bg-gray-900/50 rounded-l-md border-y-[1px] border-l-[1px] border-gray-700 w-[50%] h-[15rem]'>
                     {/**from */}
                     <div className='py-2'>
                         <h3 className=' font-thin tracking-wider uppercase text-gray-200'>{from}</h3>
@@ -24,7 +24,7 @@ const EventTable = ({ event, from, to, gender, stage, comp }) => {
 
                 </div>
                 {/**Events Slot */}
-                <div className='flex items-center flex-col justify-center bg-gray-900/90 rounded-r-md w-full border-y-[1px] border-r-[1px] backdrop-blur-lg border-gray-700  h-[10rem]'>
+                <div className='flex items-center flex-col justify-center bg-gray-900/90 rounded-r-md w-full border-y-[1px] border-r-[1px] backdrop-blur-lg border-gray-700 h-[15rem]'>
                     <div>
                         <p className=' uppercase text-gray-500'>({gender})</p>
                     </div>
@@ -34,9 +34,31 @@ const EventTable = ({ event, from, to, gender, stage, comp }) => {
                     <div className=' text-gray-300 uppercase'>
                         <h4>{stage}</h4>
                     </div>
-                    <div className=' text-yellow-300 uppercase mt-2'>
-                        <h4>{comp}</h4>
-                    </div>
+                    {
+                        fixtures ? (<div className=' uppercase w-[75%]  p-2'>
+                            <div className=' w-full bg-gray-700/40 rounded-[4px] p-1 flex flex-col justify-between items-center'>
+                                <div className=' mb-2'>
+                                    <p className=' underline underline-offset-2'>Fixtures</p>
+                                </div>
+                                <div className='w-full flex item-center justify-center'>
+                                    <div className='w-full flex flex-col'>
+                                        {fixtures?.map((match) => {
+                                            return (
+                                                <div className=' text-gray-300 flex flex-wrap w-full justify-center gap-1 '>
+                                                    <p>{match.m}.</p>
+                                                    <p className=' font-bold'>{match.t1}<span className=' text-red-300 lowercase mx-2'>vs</span>{match.t2}</p>
+
+
+
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>) : null
+                    }
 
 
                 </div>
