@@ -1,3 +1,4 @@
+import DayOff from 'components/DayOff.jsx'
 import EventTable from 'components/EventTable'
 import React from 'react'
 import { Events } from '../events.js'
@@ -18,10 +19,10 @@ const schedule = () => {
 
               <div className='px-3 py-1 flex flex-col gap-3 justify-between items-center bg-gray-700/50 rounded-md'>
                 <div>
-                  <h2 className=' text-[#C84A35]'>16</h2>
+                  <h2 className=' text-[#C84A35]'>17</h2>
                 </div>
                 <div>
-                  <h3 className='text-sm lg:text-xl font-bold tracking-widest uppercase'>THU</h3>
+                  <h3 className='text-sm lg:text-xl font-bold tracking-widest uppercase'>Fri</h3>
 
                 </div>
               </div>
@@ -30,7 +31,7 @@ const schedule = () => {
 
               </div>
               <div>
-                <h3 className='text-sm lg:text-xl font-thin tracking-wider uppercase text-[#e6c098]'>{Events.length} events</h3>
+                <h3 className='text-sm lg:text-xl font-thin tracking-wider uppercase text-[#e6c098]'>{Events.length === 0 ? (<><p className=' text-red-500 font-bold'>Day Off</p></>): (<>{Events.length} events</>)}</h3>
               </div>
             </div>
 
@@ -55,18 +56,24 @@ const schedule = () => {
             </div> */}
 
           </div>
-          
+
           <div className=' flex w-full flex-col mb-10'>
-          {
-            Events.map((event, index) => {
-              return (
+            {
+              Events.length === 0 ? (<><DayOff/></>) : (
                 <>
-                 
-                  <EventTable event={event.event} from={event.from} to={event.to} stage={event.stage} gender={event.gender} fixtures={event?.fixtures} />
+                  {
+                    Events.map((event, index) => {
+                      return (
+                        <>
+
+                          <EventTable event={event.event} from={event.from} to={event.to} stage={event.stage} gender={event.gender} fixtures={event?.fixtures} />
+                        </>
+                      )
+                    })
+                  }
                 </>
               )
-            })
-          }
+            }
           </div>
 
 

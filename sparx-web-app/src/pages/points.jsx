@@ -172,7 +172,7 @@ const points = () => {
                     2<span className=' text-red-500'>K</span>23
 
                 </h1>
-                <h2 className=' font-light'>Points Table (Day 3)</h2>
+                <h2 className=' font-light'>Points Table</h2>
                 <div className=' mt-4'>
                     <p className=' text-gray-500 text-sm'>[ Last updated on 15-03-2023 ]</p>
                 </div>
