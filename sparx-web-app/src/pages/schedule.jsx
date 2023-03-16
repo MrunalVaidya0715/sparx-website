@@ -10,7 +10,7 @@ const schedule = () => {
         <div className=' flex flex-col justify-center items-center w-full max-w-[720px]'>
 
           <div className=' flex w-full p-2 flex-col bg-gray-900/90 border-[1px] border-gray-700 rounded-lg backdrop-blur-sm'>
-            <div className=' p- flex w-full justify-start items-start '>
+            <div className=' px-3 flex w-full justify-start items-start '>
               <h2 className=' uppercase font-extralight tracking-wider'>march - 2023</h2>
             </div>
             {/**Upper */}
