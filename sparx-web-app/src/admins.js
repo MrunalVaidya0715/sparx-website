@@ -21,7 +21,7 @@ export const AdminsList = [
     },
     {
         id: 5,
-        name: "leanne Dharmai",
+        name: "Leanne Dharmai",
         imgSrc: "/assets/adminss/leanne.png"
     },
     {
