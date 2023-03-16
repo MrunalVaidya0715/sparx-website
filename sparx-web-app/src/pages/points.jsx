@@ -28,31 +28,30 @@ const points = () => {
         },
         {
             rank: 3,
-            class: "TE-COMPS",
-            points: 140,
-            pos: 0,
+            class: "BE-EXTC",
+            points: 150,
+            pos: 2,
 
         },
         {
             rank: 4,
-            class: "TE-EXTC",
-            points: 130,
-            pos: 0,
-
+            class: "TE-COMPS",
+            points: 140,
+            pos: -1,
 
         },
-        
         {
             rank: 5,
-            class: "BE-EXTC",
-            points: 90,
-            pos: 0,
+            class: "TE-EXTC",
+            points: 130,
+            pos: -1,
+
 
         },
         {
             rank: 6,
             class: "BE-COMPS",
-            points: 60,
+            points: 120,
             pos: 0,
 
 
@@ -60,24 +59,25 @@ const points = () => {
         {
             rank: 7,
             class: "BE-IT",
-            points: 60,
+            points: 120,
             pos: 0,
 
         },
         {
             rank: 8,
-            class: "SE-EXTC",
-            points: 50,
-            pos: 0,
+            class: "FE-B",
+            points: 80,
+            pos: 1,
 
         },
         {
             rank: 9,
-            class: "FE-B",
+            class: "SE-EXTC",
             points: 50,
-            pos: 0,
+            pos: -1,
 
         },
+    
         {
             rank: 10,
             class: "FE-A",
@@ -94,18 +94,18 @@ const points = () => {
         },
         {
             rank: 12,
-            class: "SE-IT",
-            points: 20,
-            pos: -2,
-        },
-        
-        {
-            rank: 13,
             class: "FE-C",
-            points: 0,
-            pos: -1,
+            points: 30,
+            pos: 1,
 
         },
+        {
+            rank: 13,
+            class: "SE-IT",
+            points: 20,
+            pos: -1,
+        },
+        
         
     ]
      
@@ -174,7 +174,7 @@ const points = () => {
                 </h1>
                 <h2 className=' font-light'>Points Table</h2>
                 <div className=' mt-4'>
-                    <p className=' text-gray-500 text-sm'>[ Last updated on 15-03-2023 ]</p>
+                    <p className=' text-gray-500 text-sm'>[ Last updated on 16-03-2023 ]</p>
                 </div>
             </div>
             <div className='  w-[90%] lg:w-[75%] max-w-[500px] overflow-hidden flex flex-col justify-center mt-2  items-center rounded-lg  border-[1px] border-gray-500'>

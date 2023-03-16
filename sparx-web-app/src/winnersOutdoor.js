@@ -65,6 +65,50 @@ export const winnersOutdoor = [
         ]
 
     },
+    {
+        id: 4,
+        sports: "Rink Football",
+        winners: [
+            {
+                rank: 1,
+                name: "BE",
+    
+            },
+            {
+                rank: 2,
+                name: "FE-B",
+
+            },
+            {
+                rank: 3,
+                name: "TBD",
+            },
+
+        ]
+
+    },
+    {
+        id: 5,
+        sports: "Tuf of War (Boys)",
+        winners: [
+            {
+                rank: 1,
+                name: "BE",
+    
+            },
+            {
+                rank: 2,
+                name: "FE-C",
+
+            },
+            {
+                rank: 3,
+                name: "TDC",
+            },
+
+        ]
+
+    },
     
     
 ]

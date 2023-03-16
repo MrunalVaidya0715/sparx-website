@@ -7,7 +7,7 @@ const Winners = () => {
 
 
   return (
-    <div className=' flex flex-col justify-start items-center h-screen w-full'>
+    <div className=' flex flex-col justify-start items-center  w-full'>
       {
         winnersOutdoor.map((item) => {
           return (
