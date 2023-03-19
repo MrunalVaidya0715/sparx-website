@@ -5,6 +5,7 @@ import { AiTwotoneStar } from 'react-icons/ai'
 import { GiTrophiesShelf } from 'react-icons/gi'
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
 import { BsDashLg } from 'react-icons/bs'
+import Link from 'next/link'
 
 const points = () => {
 
@@ -77,7 +78,7 @@ const points = () => {
             pos: -1,
 
         },
-    
+
         {
             rank: 10,
             class: "FE-A",
@@ -105,11 +106,11 @@ const points = () => {
             points: 20,
             pos: -1,
         },
-        
-        
+
+
     ]
-     
-    
+
+
 
 
 
@@ -176,6 +177,11 @@ const points = () => {
                 <div className=' mt-4'>
                     <p className=' text-gray-500 text-sm'>[ Last updated on 16-03-2023 ]</p>
                 </div>
+                <Link href='/winners'>
+                    <div className=' mt-4'>
+                        <p className=' text-blue-500 text-lg font-bold'>View Sparx-23 Winners</p>
+                    </div>
+                </Link>
             </div>
             <div className='  w-[90%] lg:w-[75%] max-w-[500px] overflow-hidden flex flex-col justify-center mt-2  items-center rounded-lg  border-[1px] border-gray-500'>
                 <div className=' w-full h-full flex flex-col justify-between items-center'>
@@ -208,13 +214,13 @@ const points = () => {
                                         {
                                             row.pos > 0 ? (
                                                 <div className=' text-yellow-300 flex flex-col items-center justify-center ' >
-                                                    <IoIosArrowUp size={20}/>
+                                                    <IoIosArrowUp size={20} />
                                                     <p className='text-sm'>{row.pos}</p>
                                                 </div>
 
                                             ) : row.pos < 0 ? (
                                                 <div className=' text-red-500 flex flex-col items-center justify-center'>
-                                                    <IoIosArrowDown size={20}/>
+                                                    <IoIosArrowDown size={20} />
                                                     <p className='text-sm'>{row.pos}</p>
                                                 </div>
                                             ) : (
