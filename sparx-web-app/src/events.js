@@ -1,52 +1,24 @@
 export const Events = [
-   /*{
-    id: 1,
-    from: "TBA",
-    to: "TBA",
-    gender: "Boys",
-    event: "Tug of War",
-    stage: "Finals",
-
-    
-
-   },
    {
-    id: 2,
+    id: 1,
     from: "TBA",
     to: "TBA",
     gender: "Girls",
     event: "Rink Football",
-    stage: "Round 1",
-
-   },
-   {
-    id: 3,
-    from: "TBA",
-    to: "TBA",
-    gender: "Boys",
-    event: "Open Football",
-    stage: "Round 1",
+    stage: "Third Place",
     fixtures : [
       {
          m: 1,
-         t1: "BE-IT",
-         t2: "FE-C"
+         t1: "FE-EXTC",
+         t2: "TE-COMPS"
       },
-      {
-         m:2,
-         t1: "SE-IT",
-         t2:"FE-A"
-      },
-      {
-         m:3,
-         t1: "FE-B",
-         t2: "FE-D"
-      }
-    ]
+   ]
+
     
 
    },
    
-   */
+   
+   
     
 ]
