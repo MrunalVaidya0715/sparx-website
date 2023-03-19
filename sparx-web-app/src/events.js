@@ -14,9 +14,47 @@ export const Events = [
       },
    ]
 
-    
-
    },
+   {
+      id: 2,
+      from: "TBA",
+      to: "TBA",
+      gender: "Boys",
+      event: "Open Football",
+      stage: "Round 1",
+      fixtures : [
+        {
+           m: 1,
+           t1: "SE-IT",
+           t2: "FE-A"
+        },
+        {
+         m: 2,
+         t1: "FE-D",
+         t2: "FE-B"
+      },
+      {
+         m: 3,
+         t1: "TE-IT",
+         t2: "SE-COMPS"
+      },
+      {
+         m: 4,
+         t1: "SE-EXTC",
+         t2: "TE-EXTC"
+      },
+     ]
+  
+     },
+     {
+      id: 3,
+      from: "TBA",
+      to: "TBA",
+      gender: "Girls",
+      event: "Box Cricket",
+      stage: "Round 1",
+      
+     },
    
    
    
