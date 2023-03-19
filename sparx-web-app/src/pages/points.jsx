@@ -73,7 +73,7 @@ const points = () => {
         {
             rank: 9,
             class: "SE-EXTC",
-            points: 50,
+            points: 80,
             pos: -1,
 
         },
@@ -95,7 +95,7 @@ const points = () => {
         {
             rank: 12,
             class: "FE-C",
-            points: 30,
+            points: 20,
             pos: 1,
 
         },

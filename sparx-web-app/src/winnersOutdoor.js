@@ -89,7 +89,7 @@ export const winnersOutdoor = [
     },
     {
         id: 5,
-        sports: "Tuf of War (Boys)",
+        sports: "Tug of War (Boys)",
         winners: [
             {
                 rank: 1,
@@ -98,12 +98,12 @@ export const winnersOutdoor = [
             },
             {
                 rank: 2,
-                name: "FE-C",
+                name: "SE-EXTC",
 
             },
             {
                 rank: 3,
-                name: "TDC",
+                name: "FE-C",
             },
 
         ]
