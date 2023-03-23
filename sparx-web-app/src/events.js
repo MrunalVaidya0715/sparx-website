@@ -1,7 +1,7 @@
 export const Events = [
    {
     id: 1,
-    from: "TBA",
+    from: "4:30 pm",
     to: "TBA",
     gender: "Girls",
     event: "Rink Football",
@@ -17,7 +17,7 @@ export const Events = [
    },
    {
       id: 2,
-      from: "TBA",
+      from: "4:30 pm",
       to: "TBA",
       gender: "Boys",
       event: "Open Football",
@@ -48,11 +48,30 @@ export const Events = [
      },
      {
       id: 3,
-      from: "TBA",
+      from: "4:30 pm",
       to: "TBA",
       gender: "Girls",
       event: "Box Cricket",
       stage: "Round 1",
+      fixtures : [
+         {
+            m: 1,
+            t1: "SE-IT",
+            t2: "TE-IT"
+         },
+         {
+          m: 2,
+          t1: "FE-D",
+          t2: "BE"
+       },
+       {
+          m: 3,
+          t1: "FE-B",
+          t2: "TE-COMPS"
+       },
+       
+      ]
+
       
      },
    

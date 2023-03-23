@@ -19,10 +19,10 @@ const schedule = () => {
 
               <div className='px-3 py-1 flex flex-col gap-3 justify-between items-center bg-gray-700/50 rounded-md'>
                 <div>
-                  <h2 className=' text-[#C84A35]'>20</h2>
+                  <h2 className=' text-[#C84A35]'>24</h2>
                 </div>
                 <div>
-                  <h3 className='text-sm lg:text-xl font-bold tracking-widest uppercase'>Mon</h3>
+                  <h3 className='text-sm lg:text-xl font-bold tracking-widest uppercase'>Fri</h3>
 
                 </div>
               </div>
