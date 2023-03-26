@@ -5,7 +5,7 @@ export const Events = [
     to: "TBA",
     gender: "Girls",
     event: "Box cricket",
-    stage: "Third Place",
+    stage: "Round 1",
     fixtures : [
       {
          m: 1,
