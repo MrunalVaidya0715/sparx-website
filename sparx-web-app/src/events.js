@@ -54,24 +54,7 @@ export const Events = [
       gender: "Boys",
       event: "Basketball",
       stage: "Round 1",
-      fixtures : [
-         {
-            m: 1,
-            t1: "SE-IT",
-            t2: "TE-IT"
-         },
-         {
-          m: 2,
-          t1: "FE-D",
-          t2: "BE"
-       },
-       {
-          m: 3,
-          t1: "FE-B",
-          t2: "TE-COMPS"
-       },
-       
-      ]
+      
 
       
      },
