@@ -44,18 +44,20 @@ const EventTable = ({ event, from, to, gender, stage, fixtures }) => {
                                     <div className='w-full flex flex-col'>
                                         {fixtures?.map((match) => {
                                             return (
-                                                <div className=' text-gray-300 flex flex-wrap w-full justify-center items-baseline  '>
-                                                    <div>
+                                                <div className=' text-gray-300 gap-2 flex flex-wrap w-full md:justify-center justify-start items-baseline  '>
+                                                    <div className=' flex'>
                                                         <p className='  text-sm '>{match.m}.</p>
                                                     </div>
-                                                    <div>
-                                                        <p>{match.t1}</p>
-                                                    </div>
-                                                    <div>
-                                                        <p className=' text-red-300 lowercase mx-1' >vs</p>
-                                                    </div>
-                                                    <div>
-                                                        <p>{match.t2}</p>
+                                                    <div className=' flex flex-wrap justify-start items-start'>
+                                                        <div>
+                                                            <p>{match.t1}</p>
+                                                        </div>
+                                                        <div>
+                                                            <p className=' text-red-300 lowercase mx-1' >vs</p>
+                                                        </div>
+                                                        <div>
+                                                            <p>{match.t2}</p>
+                                                        </div>
                                                     </div>
 
 
