@@ -67,7 +67,7 @@ const points = () => {
         {
             rank: 8,
             class: "FE-B",
-            points: 80,
+            points: 100,
             pos: 1,
 
         },
