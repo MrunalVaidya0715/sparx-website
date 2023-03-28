@@ -1,65 +1,69 @@
 export const Events = [
    {
-    id: 1,
-    from: "4:30 pm",
-    to: "TBA",
-    gender: "Girls",
-    event: "Box cricket",
-    stage: "Round 1",
-    fixtures : [
-      {
-         m: 1,
-         t1: "FE-B",
-         t2: "TE-IT"
-      },
-      {
-         m: 2,
-         t1: "FE-D",
-         t2: "BE"
-      },
-   ]
-
-   },
-   {
-      id: 2,
+      id: 1,
       from: "4:30 pm",
       to: "TBA",
       gender: "Boys",
       event: "Open Football",
-      stage: "Round 1",
-      fixtures : [
-        {
-           m: 1,
-           t1: "TE-IT",
-           t2: "SE-COMPS"
-        },
-        {
-         m: 2,
-         t1: "TE-EXTC",
-         t2: "SE-EXTC"
-      },
-      {
-         m: 3,
-         t1: "BE-COMPS",
-         t2: "TE-COMPS"
-      },
-      
-     ]
-  
-     },
-     {
-      id: 3,
+      stage: "Quarters & Semis",
+      fixtures: [
+         {
+            m: 1,
+            t1: "FE-B",
+            t2: "FE-C",
+            st: "Quarters"
+         },
+         {
+            m: 2,
+            t1: "TE-COMPS",
+            t2: "SE-EXTC",
+            st: "Semis"
+         },
+         {
+            m: 3,
+            t1: "SE-COMPS",
+            t2: "FE-B/FE-C",
+            st: "Semis"
+         },
+
+      ]
+
+   },
+   {
+      id: 2,
       from: "TBA",
       to: "TBA",
       gender: "Boys",
       event: "Basketball",
+      stage: "Round 1/Round 2",
+      fixtures: [
+         {
+            m: 1,
+            t1: "TE-IT",
+            t2: "FE-A",
+            st: "Round 1"
+         },
+         {
+            m: 2,
+            t1: "TBD",
+            t2: "TBD",
+            st: "Round 2"
+         }
+      ]
+
+   },
+   {
+      id: 3,
+      from: "TBA",
+      to: "TBA",
+      gender: "Girls",
+      event: "Volleyball",
       stage: "Round 1",
       
+   },
 
-      
-     },
-   
-   
-   
-    
+
+
+
+
 ]

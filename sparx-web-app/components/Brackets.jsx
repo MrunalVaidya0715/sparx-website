@@ -3,13 +3,13 @@ import React from 'react'
 const Brackets = () => {
     return (
         <div className=' flex w-full justify-center items-center'>
-            <div className=' border-2 max-w-[1024px] overflow-x-scroll overflow-scroll border-white/20 flex justify-center w-full items-start p-4'>
+            <div className=' border-2 border-white/20 flex justify-center w-full items-start p-4'>
                 <div className='  pb-20 flex gap-20 justify-center items-start w-full px-4 h-full'>
                     {/**Round 1 */}
-                    <div className=' flex w-[250px] flex-col gap-12 justify-between items-start'>
+                    <div className=' flex min-w-[250px] flex-col gap-12 justify-between items-start'>
                         {/**Label */}
                         <div>
-                            <h2 className='uppercase'>Round1</h2>
+                            <p className='uppercase md:text-3xl'>Round1</p>
                         </div>
                         {/**Matches */}
                         {/**Main Group 1 */}
@@ -198,10 +198,10 @@ const Brackets = () => {
 
 
                     {/**Quarter Final */}
-                    <div className=' flex w-[250px] flex-col gap-12 justify-between items-start'>
+                    <div className=' flex min-w-[250px] flex-col gap-12 justify-between items-start'>
                         {/**Label */}
                         <div>
-                            <h2 className='uppercase'>Quarters</h2>
+                            <p className='uppercase md:text-3xl'>Quarters</p>
                         </div>
                         {/**Matches */}
                         {/**Main Group 1 */}
@@ -338,10 +338,10 @@ const Brackets = () => {
 
                     {/**Semis */}
 
-                    <div className=' flex w-[250px] flex-col gap-12 justify-between items-start'>
+                    <div className=' flex min-w-[250px] flex-col gap-12 justify-between items-start'>
                         {/**Label */}
                         <div>
-                            <h2 className='uppercase'>Semis</h2>
+                            <p className='uppercase md:text-3xl'>Semis</p>
                         </div>
                         {/**Matches */}
                         {/**Main Group 1 */}
@@ -413,10 +413,10 @@ const Brackets = () => {
 
 
                     {/**Finals */}
-                    <div className=' flex w-[250px] flex-col gap-12 justify-between items-start'>
+                    <div className=' flex min-w-[250px] flex-col gap-12 justify-between items-start'>
                         {/**Label */}
                         <div>
-                            <h2 className='uppercase'>Finals</h2>
+                            <p className='uppercase md:text-3xl'>Finals</p>
                         </div>
                         {/**Matches */}
                         {/**Main Group 1 */}

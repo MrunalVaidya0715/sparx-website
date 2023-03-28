@@ -57,7 +57,7 @@ const EventTable = ({ event, from, to, gender, stage, fixtures }) => {
                                                 <div className=' flex '>
                                                     <p className='  text-sm '>{match.m}.</p>
                                                 </div>
-                                                <div className=' flex flex-wrap justify-start gap-1'>
+                                                <div className=' flex flex-wrap justify-start items-baseline gap-1'>
                                                     <div>
                                                         <p>{match.t1}</p>
                                                     </div>
@@ -66,6 +66,9 @@ const EventTable = ({ event, from, to, gender, stage, fixtures }) => {
                                                     </div>
                                                     <div>
                                                         <p>{match.t2}</p>
+                                                    </div>
+                                                    <div>
+                                                        <p className=' text-sm text-yellow-500'>({match.st})</p>
                                                     </div>
                                                 </div>
 
