@@ -105,6 +105,10 @@ export const winnersOutdoor = [
                 rank: 3,
                 name: "FE-C",
             },
+            {
+                rank: 3,
+                name: "FE-B",
+            },
 
         ]
 
