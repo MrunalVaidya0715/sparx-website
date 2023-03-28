@@ -14,7 +14,7 @@ const points = () => {
 
             rank: 1,
             class: "TE-IT",
-            points: 450,
+            points: 500,
             pos: 0,
 
 
@@ -175,7 +175,7 @@ const points = () => {
                 </h1>
                 <h2 className=' font-light'>Points Table</h2>
                 <div className=' mt-4'>
-                    <p className=' text-gray-500 text-sm'>[ Last updated on 16-03-2023 ]</p>
+                    <p className=' text-gray-500 text-sm'>[ Last updated on 28-03-2023 ]</p>
                 </div>
                 <Link href='/winners'>
                     <div className=' mt-4'>
@@ -241,7 +241,7 @@ const points = () => {
                                         }>{row.rank}</p>
                                     </div>
                                 </div>
-                                <div className=' w-full flex justify-center p-4'>
+                                <div className='flex justify-start w-full p-4'>
                                     <p className=' text-gray-400 font-medium'>{row.class}</p>
                                 </div>
                                 <div className=' w-[40%] flex items justify-center p-4'>
