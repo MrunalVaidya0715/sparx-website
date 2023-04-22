@@ -6,7 +6,7 @@ const HMention = () => {
     return (
         <>
             <div className='flex flex-col w-full justify-center items-center'>
-                <h2 className='mt-12  text-md mb-8 uppercase text-center'>Honourable Mention</h2>
+                <h2 className='mt-12  text-md mb-8 uppercase text-center'>Honorable Mention</h2>
                 {/**Images */}
                 <div className='flex flex-col md:flex-row w-full justify-center gap-4 md:gap-16'>
                 <div className=' flex flex-col gap-2 items-center justify-center'>
