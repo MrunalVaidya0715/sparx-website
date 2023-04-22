@@ -2,6 +2,7 @@ import React from 'react'
 import Marquee from 'react-fast-marquee'
 import Admins from './Admins'
 import Heads from './Heads'
+import HMention from './HMention'
 
 const HomeMembers = () => {
   return (
@@ -17,7 +18,9 @@ const HomeMembers = () => {
           <Admins />
         </Marquee>
       </div> 
-      
+      <div className=' max-w-[1024px] w-full  '>
+        <HMention/>
+      </div>
       
     </>
   )
