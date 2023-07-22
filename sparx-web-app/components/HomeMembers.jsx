@@ -13,15 +13,17 @@ const HomeMembers = () => {
         <Heads />
       </div>
       <h2 className=' mt-12 text-md mb-8 uppercase'>Meet our Admins</h2>
-      <div className=' max-w-[1024px] w-full overflow-hidden '>
-        <Marquee className=" mb-10" loop={false} speed={35} gradient={false} pauseOnHover={true} pauseOnClick={true}>
-          <Admins />
+      <div className=' max-w-[1024px] flex w-full overflow-hidden '>
+        <Marquee loop={false} speed={35} gradient={false} pauseOnHover={true} pauseOnClick={true}>
+          <div className=' flex'>
+            <Admins />
+          </div>
         </Marquee>
-      </div> 
-      <div className=' max-w-[1024px] w-full  '>
-        <HMention/>
       </div>
-      
+      <div className=' max-w-[1024px] w-full  '>
+        <HMention />
+      </div>
+
     </>
   )
 }
