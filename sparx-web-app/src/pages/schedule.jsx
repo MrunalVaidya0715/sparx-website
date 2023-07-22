@@ -62,12 +62,9 @@ const schedule = () => {
               Events.length === 0 ? (<><DayOff/></>) : (
                 <>
                   {
-                    Events.map((event, index) => {
+                    Events.map((event) => {
                       return (
-                        <>
-
-                          <EventTable event={event.event} from={event.from} to={event.to} stage={event.stage} gender={event.gender} fixtures={event?.fixtures} />
-                        </>
+                          <EventTable key={event.id} event={event.event} from={event.from} to={event.to} stage={event.stage} gender={event.gender} fixtures={event?.fixtures} />
                       )
                     })
                   }

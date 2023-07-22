@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EventTable = ({ event, from, to, gender, stage, fixtures }) => {
+const EventTable = ({event, from, to, gender, stage, fixtures }) => {
     return (
         <>
             <div className=' flex flex-col justify-center items-center mb-2'>
@@ -51,9 +51,9 @@ const EventTable = ({ event, from, to, gender, stage, fixtures }) => {
                             </div>
                             <div className='w-full flex item-center justify-center items-center'>
                                 <div className='flex flex-col gap-1'>
-                                    {fixtures?.map((match) => {
+                                    {fixtures?.map((match, index) => {
                                         return (
-                                            <div className=' text-gray-300 gap-2 px-4 pb-2 flex flex-wrap justify-start items-baseline  '>
+                                            <div key={index} className=' text-gray-300 gap-2 px-4 pb-2 flex flex-wrap justify-start items-baseline  '>
                                                 <div className=' flex '>
                                                     <p className='  text-sm '>{match.m}.</p>
                                                 </div>
