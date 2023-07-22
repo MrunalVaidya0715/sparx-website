@@ -6,7 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 const photos = () => {
     const [modal, setModal] = useState(false)
     const [tempSrc, setTempSrc] = useState('')
-
+    console.log(tempSrc)
 
 
 
@@ -37,7 +37,7 @@ const photos = () => {
                         <div className=' py-5 lg:py-8 w-full p-4 lg:p-0 flex justify-center items-center flex-col'>
                             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                                 <Images getImg={getImg} />
-                                
+
                             </div>
 
                         </div>
@@ -48,9 +48,9 @@ const photos = () => {
                 <div className=' absolute top-2 right-2 cursor-pointer bg-white/20 hover:bg-white/70 p-2 rounded-full' onClick={() => setModal(false)}>
                     <AiOutlineClose size={20} />
                 </div>
-                <div className=' relative p-10'>
-                    <Image className=' object-cover bg-center bg-cover object-center' src={tempSrc} alt="/" width={1000} height={750}  quality={80}/>
-                </div>
+                {tempSrc && (
+                    <Image className='object-cover bg-center bg-cover object-center' src={tempSrc} alt='/' width={1000} height={750} quality={80} />
+                )}
 
             </div>
         </>
