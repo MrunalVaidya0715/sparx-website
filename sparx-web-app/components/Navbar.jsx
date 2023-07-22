@@ -119,9 +119,8 @@ function Navbar() {
 
 
       </div>
-      <div onClick={handleClick} className={nav ? 'md:hidden fixed left-0 top-0 h-full w-full bg-black/70' : ''} />
-        <div className={nav ? 'fixed  right-0 top-0 bg-[#BB2649] bg-gradient-to-b from-[#d82b54] to-[#BB2649] px-4 py-0 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200' :
-          'fixed  right-[-100%] top-0 bg-[#bb2649]  px-4 py-0  h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200'}>
+      <div onClick={handleClick} className={nav ? 'md:hidden fixed left-0 top-0 h-screen w-full bg-black/70' : ''} />
+        <div className={`fixed ${nav ? " right-0 top-0": " right-[-100%] top-0"}  bg-[#BB2649] bg-gradient-to-b from-[#d82b54] to-[#BB2649] px-4 py-0 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in-out duration-500`}>
           <div className=' flex flex-col w-full h-full justify-between'>
             <div className=''>
               <div className='flex items-center justify-between'>
