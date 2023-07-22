@@ -7,111 +7,111 @@ import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
 import { BsDashLg } from 'react-icons/bs'
 import Link from 'next/link'
 
+const dataPoints = [
+    {
+
+        id: 1,
+        class: "TE-IT",
+        points: 500,
+        pos: 0,
+
+
+    },
+    {
+        id: 2,
+        class: "SE-COMPS",
+        points: 240,
+        pos: 0,
+
+
+    },
+    {
+        id: 3,
+        class: "BE-EXTC",
+        points: 150,
+        pos: 2,
+
+    },
+    {
+        id: 4,
+        class: "TE-COMPS",
+        points: 140,
+        pos: -1,
+
+    },
+    {
+        id: 5,
+        class: "TE-EXTC",
+        points: 130,
+        pos: -1,
+
+
+    },
+    {
+        id: 6,
+        class: "BE-COMPS",
+        points: 120,
+        pos: 0,
+
+
+    },
+    {
+        id: 7,
+        class: "BE-IT",
+        points: 120,
+        pos: 0,
+
+    },
+    {
+        id: 8,
+        class: "FE-B",
+        points: 100,
+        pos: 1,
+
+    },
+    {
+        id: 9,
+        class: "SE-EXTC",
+        points: 80,
+        pos: -1,
+
+    },
+
+    {
+        id: 10,
+        class: "FE-A",
+        points: 40,
+        pos: 1,
+
+    },
+    {
+        id: 11,
+        class: "FE-D",
+        points: 30,
+        pos: 2,
+
+    },
+    {
+        id: 12,
+        class: "FE-C",
+        points: 20,
+        pos: 1,
+
+    },
+    {
+        id: 13,
+        class: "SE-IT",
+        points: 20,
+        pos: -1,
+    },
+
+
+]
+
+
 const points = () => {
 
-    const data = [
-        {
-
-            rank: 1,
-            class: "TE-IT",
-            points: 500,
-            pos: 0,
-
-
-        },
-        {
-            rank: 2,
-            class: "SE-COMPS",
-            points: 240,
-            pos: 0,
-
-
-        },
-        {
-            rank: 3,
-            class: "BE-EXTC",
-            points: 150,
-            pos: 2,
-
-        },
-        {
-            rank: 4,
-            class: "TE-COMPS",
-            points: 140,
-            pos: -1,
-
-        },
-        {
-            rank: 5,
-            class: "TE-EXTC",
-            points: 130,
-            pos: -1,
-
-
-        },
-        {
-            rank: 6,
-            class: "BE-COMPS",
-            points: 120,
-            pos: 0,
-
-
-        },
-        {
-            rank: 7,
-            class: "BE-IT",
-            points: 120,
-            pos: 0,
-
-        },
-        {
-            rank: 8,
-            class: "FE-B",
-            points: 100,
-            pos: 1,
-
-        },
-        {
-            rank: 9,
-            class: "SE-EXTC",
-            points: 80,
-            pos: -1,
-
-        },
-
-        {
-            rank: 10,
-            class: "FE-A",
-            points: 40,
-            pos: 1,
-
-        },
-        {
-            rank: 11,
-            class: "FE-D",
-            points: 30,
-            pos: 2,
-
-        },
-        {
-            rank: 12,
-            class: "FE-C",
-            points: 20,
-            pos: 1,
-
-        },
-        {
-            rank: 13,
-            class: "SE-IT",
-            points: 20,
-            pos: -1,
-        },
-
-
-    ]
-
-
-
+    const [data, setData] = useState([...dataPoints])
 
 
     const [showPoint, setShowPoint] = useState(false)
@@ -164,6 +164,21 @@ const points = () => {
 
     }
 
+    useEffect(() => {
+        // Function to sort the data in descending order based on "points" and update ranks
+        const sortDataByPointsAndSetRank = () => {
+          const sortedData = data.slice().sort((a, b) => b.points - a.points);
+          sortedData.forEach((item, index) => {
+            item.id = index + 1;
+            
+          });
+    
+          setData(sortedData);
+        };
+    
+        sortDataByPointsAndSetRank();
+      }, []);
+
 
     return (
         <div className='py-20 flex flex-col justify-center items-center'>
@@ -210,28 +225,10 @@ const points = () => {
                             }
                             >
                                 <div className=' p-4 flex w-[50%] items-center justify-center'>
-                                    <div className=' flex mr-2 justify-center items-center gap-1 text-blue-500'>
+                                
+                                    <div className={row.id === 1 ? "text-yellow-400" : row.id === 2 ? "text-gray-200" : row.id === 3 ? "text-amber-700" : " text-gray-100"}>
                                         {
-                                            row.pos > 0 ? (
-                                                <div className=' text-yellow-300 flex flex-col items-center justify-center ' >
-                                                    <IoIosArrowUp size={20} />
-                                                    <p className='text-sm'>{row.pos}</p>
-                                                </div>
-
-                                            ) : row.pos < 0 ? (
-                                                <div className=' text-red-500 flex flex-col items-center justify-center'>
-                                                    <IoIosArrowDown size={20} />
-                                                    <p className='text-sm'>{row.pos}</p>
-                                                </div>
-                                            ) : (
-                                                <div><BsDashLg size={15} /></div>
-
-                                            )
-                                        }
-                                    </div>
-                                    <div className={row.rank === 1 ? "text-yellow-400" : row.rank === 2 ? "text-gray-200" : row.rank === 3 ? "text-amber-700" : " text-gray-100"}>
-                                        {
-                                            row.rank === 1 ? <AiTwotoneTrophy size={25} /> : row.rank === 2 ? <AiTwotoneTrophy size={25} /> : row.rank === 3 ? <AiTwotoneTrophy size={25} /> : <AiTwotoneStar size={25} className=' text-gray-400' />
+                                            row.id === 1 ? <AiTwotoneTrophy size={25} /> : row.id === 2 ? <AiTwotoneTrophy size={25} /> : row.id === 3 ? <AiTwotoneTrophy size={25} /> : <AiTwotoneStar size={25} className=' text-gray-400' />
                                         }
                                     </div>
 
