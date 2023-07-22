@@ -80,7 +80,7 @@ function Navbar() {
 
 
   return (
-    <div className={shadow ? ('fixed backdrop-blur-sm bg-[#030303]/90 w-full h-20 z-[100]') : ('fixed bg-[#030303] w-full h-20 z-[100]')}>
+    <div className={shadow ? ('fixed border-b-[1px] border-gray-600 backdrop-blur-sm bg-[#060717]/90 w-full h-20 z-[100]') : ('fixed border-b-[1px] border-gray-600 bg-[#060717] w-full h-20 z-[100]')}>
       <div className='flex justify-between items-center w-full h-full  px-4 2xl:px-16'>
         <Link href='/'>
           <Image src={Logo} alt="/" width='75' height='50' />
