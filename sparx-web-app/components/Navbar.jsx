@@ -22,6 +22,9 @@ function Navbar() {
   const handleNav = () => {
     setNav(!nav);
   }
+  const handleClick = () =>{
+    setNav(false);
+  }
 
   useEffect(() => {
     if (nav) {
@@ -116,7 +119,7 @@ function Navbar() {
 
 
       </div>
-      <div className={nav ? 'md:hidden fixed left-0 top-0 h-full w-full bg-black/70' : ''}>
+      <div onClick={handleClick} className={nav ? 'md:hidden fixed left-0 top-0 h-full w-full bg-black/70' : ''} />
         <div className={nav ? 'fixed  right-0 top-0 bg-[#BB2649] bg-gradient-to-b from-[#d82b54] to-[#BB2649] px-4 py-0 h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200' :
           'fixed  right-[-100%] top-0 bg-[#bb2649]  px-4 py-0  h-screen w-[75%]  sm:w-[60%] md:w-[45%] ease-in duration-200'}>
           <div className=' flex flex-col w-full h-full justify-between'>
@@ -180,9 +183,6 @@ function Navbar() {
           </div>
 
         </div>
-
-      </div>
-
 
     </div>
   )
