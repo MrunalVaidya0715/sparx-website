@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai'
-import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { FaInstagram } from 'react-icons/fa'
 import { useRouter } from 'next/router';
 import Logo from '../public/assets/sparxLogo.png'
 import { AiFillHome } from 'react-icons/ai'
