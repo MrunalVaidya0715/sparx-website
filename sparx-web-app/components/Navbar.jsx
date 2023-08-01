@@ -103,6 +103,9 @@ function Navbar() {
             <Link href="/winners">
               <li className={`ml-8 ${router.asPath === '/winners' ? 'text-yellow-400' : ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Winners</li>
             </Link>
+            <Link href="/report">
+              <li className={`ml-8 ${router.asPath === '/report' ? 'text-yellow-400' : ""} text-md font-medium uppercase hover:text-[#9D9D9E]  ease-in duration-150`}>Report</li>
+            </Link>
 
 
           </ul>
@@ -153,6 +156,9 @@ function Navbar() {
                 </Link>
                 <Link href='/winners'>
                   <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/winners' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2' />Winners</div></li>
+                </Link>
+                <Link href='/report'>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/report' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2' />Report</div></li>
                 </Link>
 
 
