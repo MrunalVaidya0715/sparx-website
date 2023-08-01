@@ -12,7 +12,7 @@ const dataPoints = [
 
         id: 1,
         class: "TE-IT",
-        points: 500,
+        points: 490,
         pos: 0,
 
 
@@ -28,21 +28,21 @@ const dataPoints = [
     {
         id: 3,
         class: "BE-EXTC",
-        points: 150,
+        points: 130,
         pos: 2,
 
     },
     {
         id: 4,
         class: "TE-COMPS",
-        points: 140,
+        points: 210,
         pos: -1,
 
     },
     {
         id: 5,
         class: "TE-EXTC",
-        points: 130,
+        points: 170,
         pos: -1,
 
 
@@ -50,7 +50,7 @@ const dataPoints = [
     {
         id: 6,
         class: "BE-COMPS",
-        points: 120,
+        points: 150,
         pos: 0,
 
 
@@ -58,21 +58,21 @@ const dataPoints = [
     {
         id: 7,
         class: "BE-IT",
-        points: 120,
+        points: 100,
         pos: 0,
 
     },
     {
         id: 8,
         class: "FE-B",
-        points: 100,
+        points: 140,
         pos: 1,
 
     },
     {
         id: 9,
         class: "SE-EXTC",
-        points: 80,
+        points: 220,
         pos: -1,
 
     },
@@ -80,21 +80,21 @@ const dataPoints = [
     {
         id: 10,
         class: "FE-A",
-        points: 40,
+        points: 130,
         pos: 1,
 
     },
     {
         id: 11,
         class: "FE-D",
-        points: 30,
+        points: 60,
         pos: 2,
 
     },
     {
         id: 12,
         class: "FE-C",
-        points: 20,
+        points: 70,
         pos: 1,
 
     },
