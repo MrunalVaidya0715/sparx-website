@@ -8,7 +8,7 @@ const report = () => {
     return (
         <div className='pt-24 flex flex-col gap-4 items-center w-full min-h-screen'>
             <h2 className=' tracking-wider mb-4 font-light '>Report 2<span className=' text-red-500'>K</span>23</h2>
-            <Link href={reportUrl} download>
+            <Link target='_blank' href={reportUrl} download>
                 <div className='group flex w-full gap-1 items-center rounded-full bg-gray-700/50 border-[1px] border-gray-700 text-white px-4 py-3 ease-in duration-300'>
                     <BiSolidBarChartAlt2 size={22} className=" group-hover:text-yellow-400  hover:scale-125 transition-all ease-in duration-150" />
                     <p className=' group-hover:text-yellow-400 transition-all ease-in duration-150'>View Report</p>
@@ -16,7 +16,7 @@ const report = () => {
 
             </Link>
             <div className=' mt-8 p-2'>
-                <Image className=' border-x-[1px]' src={summ} alt='summary' priority />
+                <Image src={summ} alt='summary' priority />
             </div>
         </div>
     )

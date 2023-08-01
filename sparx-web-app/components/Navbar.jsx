@@ -11,6 +11,7 @@ import { AiFillSchedule } from 'react-icons/ai'
 import { IoMdPhotos } from 'react-icons/io'
 import { AiFillTrophy } from 'react-icons/ai'
 import { SlBookOpen } from 'react-icons/sl'
+import {HiDocumentReport} from 'react-icons/hi'
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [navBg, setNavBg] = useState('#030303');
@@ -158,7 +159,7 @@ function Navbar() {
                   <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/winners' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2' />Winners</div></li>
                 </Link>
                 <Link href='/report'>
-                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/report' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><AiFillTrophy className=' mr-2' />Report</div></li>
+                  <li onClick={() => setNav(false)} className={`ml-4 ${router.asPath === '/report' ? "text-yellow-400" : ""} hover:bg-[#b12647] p-2 rounded-md text-md font-light tracking-widest md:text-lg uppercase hover:text-[#000000]/50 hover:ml-12  ease-in duration-150`}><div className=' flex items-center justify-start'><HiDocumentReport className=' mr-2' />Report</div></li>
                 </Link>
 
 
