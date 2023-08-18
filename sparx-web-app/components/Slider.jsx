@@ -56,7 +56,7 @@ const Slider = () => {
     };
 
     return (
-        <div className=' flex flex-col justify-center items-center'>
+        <div className='mt-2 flex flex-col justify-center items-center'>
             <div className=' max-w-[1024px] h-[22rem] sm:h-[26rem] md:h-[28rem] lg:h-[30rem] xl:h-[32rem] px-2 w-full flex flex-col justify-center items-center relative'>
                 <div className='w-full relative h-full rounded-lg bg-center bg-cover duration-500 flex items-center justify-center'>
                     <div className=' relative w-full h-full'>
