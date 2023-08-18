@@ -23,6 +23,9 @@ const Footer = () => {
                     <Link href='/winners'>
                         <p className=' underline underline-offset-2 hover:opacity-[0.4] uppercase text-gray-500'>Winners</p>
                     </Link>
+                    <Link href='/report'>
+                        <p className=' underline underline-offset-2 hover:opacity-[0.4] uppercase text-gray-500'>Report</p>
+                    </Link>
 
 
                 </div>
@@ -33,10 +36,9 @@ const Footer = () => {
                 <div>
                     <p>Developed by: </p>
                 </div>
-                <Link href='https://instagram.com/mru.v_?igshid=YmMyMTA2M2Y='>
+                <Link target='_blank' href='https://www.mrunalvaidya.xyz/'>
                     <div className=' flex items-center'>
-                        <p className=' font-thin ml-1 text-gray-400 text-md'><span className=' text-gray-400'> Mrunal Vaidya</span></p>
-                        <FaInstagram className=' text-white ml-1' size={20} />
+                        <p className=' underline-offset-2 hover:underline hover:text-white font-thin ml-1 text-gray-400 text-md'><span className=' text-gray-400'> Mrunal Vaidya</span></p>
                     </div>
                 </Link>
             </div>
